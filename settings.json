@@ -124,6 +124,24 @@
     "enabled_in_text_threads": false
   },
 
+  // Custom language models
+  "language_models": {
+    "openai_compatible": {
+      "Azure GPT-5 through LiteLLM Proxy": {
+        "api_url": "http://127.0.0.1:4000/v1",
+        "available_models": [
+          {
+            "name": "gpt-5",
+            "display_name": "GPT-5",
+            "max_tokens": 272000,
+            "max_output_tokens": 128000,
+            "max_completion_tokens": 200000
+          }
+        ]
+      }
+    }
+  },
+
   // Code intelligence
   "inlay_hints": {
     "enabled": true,
