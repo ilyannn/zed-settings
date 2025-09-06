@@ -1,0 +1,260 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  // =============================================
+  // APPEARANCE & THEME
+  // =============================================
+  "icon_theme": "Catppuccin Latte",
+  "theme": "Dayfox - blurred",
+
+  // =============================================
+  // PRIVACY & TELEMETRY
+  // =============================================
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+
+  // =============================================
+  // EDITOR BEHAVIOR
+  // =============================================
+
+  // File saving
+  "autosave": "on_window_change",
+
+  // Keybindings and navigation
+  "base_keymap": "Cursor",
+  "relative_line_numbers": true,
+  "soft_wrap": "editor_width",
+  "vertical_scroll_margin": 10,
+  "scroll_beyond_last_line": "one_page",
+
+  // Search settings
+  "use_smartcase_search": true,
+  "seed_search_query_from_cursor": "always",
+
+  // Preview tabs for exploration
+  "preview_tabs": {
+    "enabled": true,
+    "enable_preview_from_file_finder": true
+  },
+
+  // Auto-formatting
+  "format_on_save": "on",
+  "remove_trailing_whitespace_on_save": true,
+
+  // Editor helpers
+  "show_whitespaces": "selection",
+  "use_autoclose": true,
+  "hover_popover_enabled": true,
+
+  // Editor appearance
+  "gutter": {
+    "min_line_number_digits": 3
+  },
+  "active_pane_modifiers": {
+    "border_size": 2
+  },
+  "indent_guides": {
+    "coloring": "indent_aware"
+  },
+  "line_indicator_format": "long",
+  "unnecessary_code_fade": 0.5,
+
+  // Auto-close & surround
+  "jsx_tag_auto_close": {
+    "enabled": true
+  },
+  "use_auto_surround": true,
+
+  // Editing helpers
+  "linked_edits": true,
+  "autoscroll_on_clicks": true,
+
+  // Inline information
+  "git": {
+    "inline_blame": {
+      "enabled": true,
+      "min_column": 50,
+      "show_commit_summary": true
+    },
+    "hunk_style": "unstaged_hollow"
+  },
+
+  // =============================================
+  // FONTS & TYPOGRAPHY
+  // =============================================
+  "ui_font_size": 15,
+  "buffer_font_family": "Input Mono",
+  "buffer_font_size": 12,
+  "buffer_line_height": "comfortable",
+
+  // =============================================
+  // VIM CONFIGURATION
+  // =============================================
+  "vim_mode": true,
+  "vim": {
+    "toggle_relative_line_numbers": true
+  },
+
+  // =============================================
+  // FEATURES & INTEGRATIONS
+  // =============================================
+
+  // Enable some AI features
+  "show_edit_predictions": true,
+  "features": {
+    "edit_prediction_provider": "copilot"
+  },
+
+  "edit_predictions": {
+    "disabled_globs": [],
+    "mode": "eager",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null,
+      "enterprise_uri": null
+    },
+    "enabled_in_text_threads": false
+  },
+
+  // Code intelligence
+  "inlay_hints": {
+    "enabled": true,
+    "show_type_hints": true,
+    "show_parameter_hints": true,
+    "show_other_hints": true
+  },
+
+  // Completions
+  "completions": {
+    "words": "fallback"
+  },
+  "auto_signature_help": true,
+
+  // Diagnostics & errors
+  "diagnostics": {
+    "button": true,
+    "include_warnings": true,
+    "lsp_pull_diagnostics": {
+      "enabled": true,
+      "debounce_ms": 50
+    },
+    "inline": {
+      "enabled": true,
+      "update_debounce_ms": 50,
+      "padding": 4,
+      "min_column": 50,
+      "max_severity": "warning"
+    }
+  },
+  "diagnostics_max_severity": "error",
+
+  // File finder
+  "file_finder": {
+    "modal_max_width": "medium"
+  },
+
+  // System integration
+  "use_system_path_prompts": false,
+
+  // Tasks
+  "tasks": {
+    "enabled": true,
+    "prefer_lsp": true
+  },
+
+  // =============================================
+  // PANELS & INTERFACE LAYOUT
+  // =============================================
+
+  // Title bar
+  "title_bar": {
+    "show_branch_icon": true,
+    "show_sign_in": false,
+    "show_user_picture": false
+  },
+
+  // Remove a bunch of buttons
+  "agent": {
+    "dock": "left",
+    "enable_feedback": false,
+    "expand_edit_card": false,
+    "notify_when_agent_waiting": "all_screens"
+  },
+
+  "collaboration_panel": {
+    "button": false,
+    "dock": "right"
+  },
+  "chat_panel": {
+    "button": "never"
+  },
+  "search": {
+    "button": false
+  },
+
+  "outline_panel": {
+    "button": false
+  },
+
+  // Git configuration
+  "git_panel": {
+    "dock": "right"
+  },
+
+  // Terminal
+  "terminal": {
+    "line_height": "standard",
+    "dock": "left",
+    "toolbar": {
+      "breadcrumbs": true
+    }
+  },
+
+  // Tabs configuration
+  "tab_bar": {
+    "show": true,
+    "show_nav_history_buttons": false,
+    "show_tab_bar_buttons": true
+  },
+  "tabs": {
+    "file_icons": true,
+    "git_status": true
+  },
+
+  // Project panel
+  "project_panel": {
+    "dock": "right",
+    "indent_size": 16,
+    "entry_spacing": "standard"
+  },
+
+  // =============================================
+  // LANGUAGE-SPECIFIC SETTINGS
+  // =============================================
+  "languages": {
+    "TypeScript": {
+      "code_actions_on_format": {
+        "source.organizeImports": true
+      }
+    },
+    "JavaScript": {
+      "code_actions_on_format": {
+        "source.organizeImports": true
+      }
+    },
+    "TSX": {
+      "code_actions_on_format": {
+        "source.organizeImports": true
+      }
+    },
+    "JSONC": {}
+  }
+}
