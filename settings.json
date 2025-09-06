@@ -193,7 +193,6 @@
   "lsp": {
     "ruff": {
       "settings": {
-        "configuration": "./pyproject.toml",
         "fixAll": true
       }
     }
@@ -305,7 +304,6 @@
   "languages": {
     "Python": {
       "tab_size": 4,
-      "indent_size": 4,
       "language_servers": ["ruff"],
       "formatter": {
         "external": {
