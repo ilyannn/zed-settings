@@ -226,7 +226,7 @@
     "show_user_picture": false
   },
 
-  // Remove a bunch of buttons
+  // AI Agents
   "agent": {
     "dock": "left",
     "enable_feedback": false,
@@ -234,6 +234,7 @@
     "notify_when_agent_waiting": "all_screens"
   },
 
+  // Remove a bunch of buttons
   "collaboration_panel": {
     "button": false,
     "dock": "right"
