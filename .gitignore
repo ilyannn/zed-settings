@@ -1,2 +1,7 @@
 # Only track files manually added to the index
 *
+!.gitignore
+!LICENSE
+!README.md
+!settings.json
+!tasks.json

@@ -1,0 +1,123 @@
+// Project tasks configuration. See https://zed.dev/docs/tasks for documentation.
+//
+// Configured tasks can be run from the command palette or assigned to keybindings.
+[
+  {
+    // Claude CLI - Interactive AI assistant for coding tasks
+    "label": "claude",
+    "command": "claude",
+    // Always show the terminal when starting Claude
+    "reveal": "always",
+    // Start Claude in a new terminal tab for clean session
+    "use_new_terminal": true,
+    // Prevent multiple Claude instances (only one session at a time)
+    "allow_concurrent_runs": false,
+    // Keep terminal open after Claude exits for session review
+    "hide": "never",
+    // Place in the terminal dock (not in main editor area)
+    "reveal_target": "dock"
+  },
+  {
+    // Claude: Create commit with AI assistance
+    "label": "Claude: Commit",
+    "command": "claude",
+    "args": ["-p", "/commit"],
+    // Always show the terminal to see commit process
+    "reveal": "always",
+    // Use new terminal for clean commit session
+    "use_new_terminal": true,
+    // Only one commit session at a time
+    "allow_concurrent_runs": false,
+    // Keep terminal open to review commit result
+    "hide": "never",
+    "reveal_target": "dock"
+  },
+  {
+    // Claude: Push with safety review
+    "label": "Claude: Push", 
+    "command": "claude",
+    "args": ["-p", "/push"],
+    "reveal": "always",
+    "use_new_terminal": true,
+    "allow_concurrent_runs": false,
+    "hide": "never",
+    "reveal_target": "dock"
+  },
+  {
+    // Claude: Create pull request
+    "label": "Claude: Pull Request",
+    "command": "claude",
+    "args": ["-p", "/pr"],
+    "reveal": "always",
+    "use_new_terminal": true,
+    "allow_concurrent_runs": false,
+    "hide": "never",
+    "reveal_target": "dock"
+  },
+  {
+    // Claude: Run CI checks and fix issues
+    "label": "Claude: CI",
+    "command": "claude",
+    "args": ["-p", "/ci"],
+    // Always show to monitor CI progress
+    "reveal": "always",
+    // New terminal for clean CI session
+    "use_new_terminal": true,
+    // Prevent multiple CI runs
+    "allow_concurrent_runs": false,
+    // Keep open to review CI results and fixes
+    "hide": "never",
+    "reveal_target": "dock"
+  },
+  {
+    // Python: Run current file
+    "label": "Python: Run Current File",
+    "command": "python",
+    "args": ["$ZED_FILE"],
+    "reveal": "always",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": true,
+    "hide": "never"
+  },
+  {
+    // Python: Format with Ruff
+    "label": "Python: Format with Ruff",
+    "command": "uvx",
+    "args": ["ruff", "format", "$ZED_FILE"],
+    "reveal": "no_focus",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    // Hide terminal on successful formatting
+    "hide": "on_success"
+  },
+  {
+    // Python: Lint with Ruff
+    "label": "Python: Lint with Ruff",
+    "command": "uvx",
+    "args": ["ruff", "check", "$ZED_FILE", "--fix"],
+    "reveal": "always",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "hide": "never"
+  },
+  {
+    // Git: Quick commit
+    "label": "Git: Quick Commit",
+    "command": "git",
+    "args": ["commit", "-am", "\"Quick commit from Zed\""],
+    "reveal": "always",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "hide": "on_success"
+  },
+  {
+    // Git: Status
+    "label": "Git: Status",
+    "command": "git",
+    "args": ["status", "--short", "--branch"],
+    "reveal": "always",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": true,
+    "hide": "never"
+  }
+]
