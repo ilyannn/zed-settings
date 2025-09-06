@@ -10,130 +10,219 @@
   // =============================================
   // APPEARANCE & THEME
   // =============================================
+  // Visual theme configuration for editor and UI
+  
+  // Icon theme for file types in the file tree
   "icon_theme": "Catppuccin Latte",
+  
+  // Editor color theme - using Dayfox with opaque background
   "theme": "Dayfox - opaque",
 
   // =============================================
   // PRIVACY & TELEMETRY
   // =============================================
+  // Control data sharing with Zed developers
+  
   "telemetry": {
+    // Disable diagnostic data collection
     "diagnostics": false,
+    // Disable usage metrics collection
     "metrics": false
   },
 
   // =============================================
-  // EDITOR BEHAVIOR
+  // CORE EDITOR SETTINGS
   // =============================================
-
-  // File saving
+  // Essential editor behavior and functionality
+  
+  // --- File Operations ---
+  // Automatically save files when switching windows
   "autosave": "on_window_change",
-
-  // Keybindings and navigation
+  
+  // Remove trailing whitespace characters when saving
+  "remove_trailing_whitespace_on_save": true,
+  
+  // Auto-format code when saving files
+  "format_on_save": "on",
+  
+  // --- Keybindings & Navigation ---
+  // Use Cursor-style keybindings as base
   "base_keymap": "Cursor",
+  
+  // Show line numbers relative to cursor position (useful for Vim)
   "relative_line_numbers": true,
+  
+  // Wrap long lines at editor width
   "soft_wrap": "editor_width",
+  
+  // Keep 10 lines visible above/below cursor when scrolling
   "vertical_scroll_margin": 10,
+  
+  // Allow scrolling one page past the last line
   "scroll_beyond_last_line": "one_page",
+  
+  // Auto-scroll to cursor position when clicking
+  "autoscroll_on_clicks": true,
 
-  // Search settings
+  // --- Search & Find ---
+  // Use smart case for searches (case-insensitive unless uppercase is used)
   "use_smartcase_search": true,
+  
+  // Always use text under cursor as initial search query
   "seed_search_query_from_cursor": "always",
 
-  // Preview tabs for exploration
+  // --- Preview & Navigation ---
+  // Enable preview tabs for quick file exploration
   "preview_tabs": {
     "enabled": true,
+    // Also use preview tabs when opening from file finder
     "enable_preview_from_file_finder": true
   },
 
-  // Auto-formatting
-  "format_on_save": "on",
-  "remove_trailing_whitespace_on_save": true,
-
-  // Editor helpers
+  // --- Editor Display ---
+  // Show whitespace characters only in selected text
   "show_whitespaces": "selection",
-  "use_autoclose": true,
-  "hover_popover_enabled": true,
-
-  // Editor appearance
+  
+  // Line number display configuration
   "gutter": {
+    // Minimum digits for line numbers (e.g., 001, 002)
     "min_line_number_digits": 3
   },
+  
+  // Highlight active pane with a thicker border
   "active_pane_modifiers": {
     "border_size": 2
   },
+  
+  // Color indent guides based on indentation level
   "indent_guides": {
     "coloring": "indent_aware"
   },
+  
+  // Show detailed line position indicator
   "line_indicator_format": "long",
+  
+  // Fade unused/unreachable code to 50% opacity
   "unnecessary_code_fade": 0.5,
 
-  // Auto-close & surround
+  // --- Auto-completion & Helpers ---
+  // Automatically close brackets, quotes, etc.
+  "use_autoclose": true,
+  
+  // Automatically surround selected text with brackets/quotes
+  "use_auto_surround": true,
+  
+  // Auto-close JSX/HTML tags
   "jsx_tag_auto_close": {
     "enabled": true
   },
-  "use_auto_surround": true,
-
-  // Editing helpers
+  
+  // Enable hover tooltips for documentation
+  "hover_popover_enabled": true,
+  
+  // Enable linked editing (rename all occurrences simultaneously)
   "linked_edits": true,
-  "autoscroll_on_clicks": true,
-
-  // Inline information
-  "git": {
-    "inline_blame": {
-      "enabled": true,
-      "min_column": 50,
-      "show_commit_summary": true
-    },
-    "hunk_style": "unstaged_hollow"
-  },
+  
+  // Show function signature help automatically
+  "auto_signature_help": true,
 
   // =============================================
   // FONTS & TYPOGRAPHY
   // =============================================
+  // Font settings for UI and editor
+  
+  // UI font size (menus, panels, etc.)
   "ui_font_size": 15,
+  
+  // Editor font family - using Input Mono for coding
   "buffer_font_family": "Input Mono",
+  
+  // Editor font size
   "buffer_font_size": 12,
+  
+  // Line height spacing - comfortable for readability
   "buffer_line_height": "comfortable",
 
   // =============================================
-  // VIM CONFIGURATION
+  // VIM MODE CONFIGURATION
   // =============================================
+  // Vim emulation settings for modal editing
+  
+  // Enable Vim mode for modal editing
   "vim_mode": true,
+  
   "vim": {
+    // Toggle relative line numbers based on mode
     "toggle_relative_line_numbers": true,
+    // Always use system clipboard for yank/paste operations
     "use_system_clipboard": "always"
   },
 
   // =============================================
-  // FEATURES & INTEGRATIONS
+  // VERSION CONTROL (GIT)
   // =============================================
+  // Git integration and display settings
+  
+  "git": {
+    // Show inline blame information in the editor
+    "inline_blame": {
+      "enabled": true,
+      // Start showing blame info at column 50
+      "min_column": 50,
+      // Include commit message summary in blame
+      "show_commit_summary": true
+    },
+    // Show unstaged changes with hollow markers
+    "hunk_style": "unstaged_hollow"
+  },
+  
+  // Git panel placement in the interface
+  "git_panel": {
+    "dock": "right"
+  },
 
-  // Enable some AI features
+  // =============================================
+  // AI & CODE INTELLIGENCE
+  // =============================================
+  // AI features, predictions, and code intelligence
+  
+  // --- Edit Predictions ---
+  // Show AI-powered edit predictions inline
   "show_edit_predictions": true,
+  
+  // Use GitHub Copilot for predictions
   "features": {
     "edit_prediction_provider": "copilot"
   },
-
+  
+  // Detailed edit prediction configuration
   "edit_predictions": {
+    // No files excluded from predictions
     "disabled_globs": [],
+    // Show predictions eagerly as you type
     "mode": "eager",
+    // Copilot configuration
     "copilot": {
       "proxy": null,
       "proxy_no_verify": null,
       "enterprise_uri": null
     },
+    // Disable predictions in text threads/chat
     "enabled_in_text_threads": false
   },
 
-  // Custom language models
+  // --- Custom Language Models ---
+  // Configure additional AI models via OpenAI-compatible APIs
   "language_models": {
     "openai_compatible": {
+      // GPT-5 access through local LiteLLM proxy
       "Azure GPT-5 through LiteLLM Proxy": {
         "api_url": "http://127.0.0.1:4000/v1",
         "available_models": [
           {
             "name": "gpt-5",
             "display_name": "GPT-5",
+            // Token limits for the model
             "max_tokens": 272000,
             "max_output_tokens": 128000,
             "max_completion_tokens": 200000
@@ -143,168 +232,245 @@
     }
   },
 
-  // Code intelligence
+  // --- Code Intelligence ---
+  // Inline hints for types, parameters, etc.
   "inlay_hints": {
     "enabled": true,
+    // Show type information inline
     "show_type_hints": true,
+    // Show parameter names in function calls
     "show_parameter_hints": true,
+    // Show other helpful hints
     "show_other_hints": true
   },
-
-  // Completions
+  
+  // Code completion settings
   "completions": {
+    // Use word-based completions as fallback
     "words": "fallback"
   },
-  "auto_signature_help": true,
 
-  // Diagnostics & errors
+  // =============================================
+  // DIAGNOSTICS & ERROR HANDLING
+  // =============================================
+  // Configuration for error display and diagnostics
+  
   "diagnostics": {
+    // Show diagnostics button in toolbar
     "button": true,
+    // Include warnings (not just errors)
     "include_warnings": true,
+    // Pull diagnostics from language servers
     "lsp_pull_diagnostics": {
       "enabled": true,
+      // Debounce time for pulling diagnostics
       "debounce_ms": 50
     },
+    // Inline diagnostic display configuration
     "inline": {
       "enabled": true,
+      // Debounce time for updating inline diagnostics
       "update_debounce_ms": 50,
+      // Padding around inline diagnostics
       "padding": 4,
+      // Start showing diagnostics at column 50
       "min_column": 50,
+      // Show up to warning severity inline
       "max_severity": "warning"
     }
   },
+  
+  // Maximum severity to display in diagnostics panel
   "diagnostics_max_severity": "error",
 
-  // File finder
-  "file_finder": {
-    "modal_max_width": "medium"
-  },
-
-  // System integration
-  "use_system_path_prompts": false,
-
-  // Tasks
-  "tasks": {
-    "enabled": true,
-    "prefer_lsp": true
-  },
-
-  // LSP configuration
+  // =============================================
+  // LANGUAGE SERVER PROTOCOL (LSP)
+  // =============================================
+  // Configuration for language servers
+  
   "lsp": {
+    // Ruff (Python linter/formatter) configuration
     "ruff": {
       "settings": {
+        // Auto-fix all fixable issues
         "fixAll": true
       }
     }
   },
 
-  // File scanning exclusions
+  // =============================================
+  // FILE & PROJECT MANAGEMENT
+  // =============================================
+  // File handling and project organization
+  
+  // File finder modal size
+  "file_finder": {
+    "modal_max_width": "medium"
+  },
+  
+  // Don't use system path prompts in dialogs
+  "use_system_path_prompts": false,
+  
+  // Task runner configuration
+  "tasks": {
+    "enabled": true,
+    // Prefer LSP-provided tasks over generic ones
+    "prefer_lsp": true
+  },
+  
+  // --- File Scanning Exclusions ---
+  // Patterns for files/folders to ignore in file tree and search
   "file_scan_exclusions": [
-    // Zed defaults
+    // Version control directories
     "**/.git",
     "**/.svn",
     "**/.hg",
     "**/.jj",
     "**/CVS",
+    
+    // OS-specific files
     "**/.DS_Store",
     "**/Thumbs.db",
+    
+    // IDE/Editor directories
     "**/.classpath",
     "**/.settings",
-
-    // Additional files to exclude
+    "**/.idea",
+    "**/.vscode",
+    
+    // Python virtual environments and caches
     "**/.venv",
     "**/venv",
     "**/.mypy_cache",
     "**/.pytest_cache",
     "**/.ruff_cache",
+    
+    // General cache directories
     "**/.cache",
-    "**/.idea",
-    "**/.vscode",
+    
+    // Node.js and build outputs
     "**/node_modules",
     "**/dist",
     "**/build"
   ],
 
   // =============================================
-  // PANELS & INTERFACE LAYOUT
+  // USER INTERFACE LAYOUT
   // =============================================
-
-  // Toolbar
+  // Configuration for panels, toolbars, and UI elements
+  
+  // --- Toolbar & Title Bar ---
+  // Top toolbar configuration
   "toolbar": {
+    // Show file breadcrumbs in toolbar
     "breadcrumbs": true
   },
-
-  // Title bar
+  
+  // Title bar display settings
   "title_bar": {
+    // Show git branch icon
     "show_branch_icon": true,
+    // Hide sign-in button
     "show_sign_in": false,
+    // Hide user profile picture
     "show_user_picture": false
   },
 
-  // AI Agents
+  // --- Tab Bar ---
+  // Tab bar configuration
+  "tab_bar": {
+    // Show tab bar
+    "show": true,
+    // Hide navigation history buttons
+    "show_nav_history_buttons": false,
+    // Show tab management buttons
+    "show_tab_bar_buttons": true
+  },
+  
+  // Individual tab display settings
+  "tabs": {
+    // Show file type icons in tabs
+    "file_icons": true,
+    // Show git status in tabs
+    "git_status": true
+  },
+
+  // --- AI Agent Panel ---
+  // Claude/AI assistant panel settings
   "agent": {
+    // Dock on the left side
     "dock": "left",
+    // Disable feedback prompts
     "enable_feedback": false,
+    // Don't expand edit cards by default
     "expand_edit_card": false,
+    // Notify on all screens when agent is waiting
     "notify_when_agent_waiting": "all_screens"
   },
 
-  // Remove a bunch of buttons
-  "collaboration_panel": {
-    "button": false,
-    "dock": "right"
-  },
-  "chat_panel": {
-    "button": "never"
-  },
-  "search": {
-    "button": false
-  },
-
-  "outline_panel": {
-    "button": false
-  },
-
-  // Git configuration
-  "git_panel": {
-    "dock": "right"
-  },
-
-  // Terminal
+  // --- Terminal ---
+  // Integrated terminal configuration
   "terminal": {
+    // Standard line height for terminal text
     "line_height": "standard",
+    // Dock terminal on the left
     "dock": "left",
+    // Copy text when selecting (Unix-style)
     "copy_on_select": true,
     "toolbar": {
+      // Show breadcrumbs in terminal toolbar
       "breadcrumbs": true
     }
   },
 
-  // Tabs configuration
-  "tab_bar": {
-    "show": true,
-    "show_nav_history_buttons": false,
-    "show_tab_bar_buttons": true
-  },
-  "tabs": {
-    "file_icons": true,
-    "git_status": true
+  // --- Project Panel ---
+  // File tree/project explorer settings
+  "project_panel": {
+    // Dock on the right side
+    "dock": "right",
+    // Indentation size for nested items
+    "indent_size": 16,
+    // Standard spacing between entries
+    "entry_spacing": "standard"
   },
 
-  // Project panel
-  "project_panel": {
-    "dock": "right",
-    "indent_size": 16,
-    "entry_spacing": "standard"
+  // --- Hidden/Disabled Panels ---
+  // Panels that are hidden or have buttons disabled
+  
+  // Collaboration features (disabled)
+  "collaboration_panel": {
+    "button": false,
+    "dock": "right"
+  },
+  
+  // Chat panel (never show button)
+  "chat_panel": {
+    "button": "never"
+  },
+  
+  // Search panel (hide button)
+  "search": {
+    "button": false
+  },
+  
+  // Outline panel (hide button)
+  "outline_panel": {
+    "button": false
   },
 
   // =============================================
   // LANGUAGE-SPECIFIC SETTINGS
   // =============================================
+  // Per-language configurations and formatters
+  
   "languages": {
+    // --- Python ---
     "Python": {
+      // Use 4 spaces for indentation (PEP 8)
       "tab_size": 4,
+      // Use Ruff as the language server
       "language_servers": ["ruff"],
+      // Format using Ruff via uvx (Python tool runner)
       "formatter": {
         "external": {
           "command": "uvx",
@@ -312,21 +478,33 @@
         }
       }
     },
+    
+    // --- TypeScript ---
     "TypeScript": {
+      // Auto-organize imports on format
       "code_actions_on_format": {
         "source.organizeImports": true
       }
     },
+    
+    // --- JavaScript ---
     "JavaScript": {
+      // Auto-organize imports on format
       "code_actions_on_format": {
         "source.organizeImports": true
       }
     },
+    
+    // --- TSX (TypeScript React) ---
     "TSX": {
+      // Auto-organize imports on format
       "code_actions_on_format": {
         "source.organizeImports": true
       }
     },
+    
+    // --- JSONC (JSON with Comments) ---
+    // No specific settings, but language is recognized
     "JSONC": {}
   }
 }
