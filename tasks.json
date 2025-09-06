@@ -21,7 +21,7 @@
     // Claude: Create commit with AI assistance
     "label": "Claude: Commit",
     "command": "claude",
-    "args": ["-p", "/commit"],
+    "args": ["/commit"],
     // Always show the terminal to see commit process
     "reveal": "always",
     // Use new terminal for clean commit session
@@ -34,9 +34,9 @@
   },
   {
     // Claude: Push with safety review
-    "label": "Claude: Push", 
+    "label": "Claude: Push",
     "command": "claude",
-    "args": ["-p", "/push"],
+    "args": ["/push"],
     "reveal": "always",
     "use_new_terminal": true,
     "allow_concurrent_runs": false,
@@ -47,7 +47,7 @@
     // Claude: Create pull request
     "label": "Claude: Pull Request",
     "command": "claude",
-    "args": ["-p", "/pr"],
+    "args": ["/pr"],
     "reveal": "always",
     "use_new_terminal": true,
     "allow_concurrent_runs": false,
