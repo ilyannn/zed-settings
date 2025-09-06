@@ -100,7 +100,8 @@
   // =============================================
   "vim_mode": true,
   "vim": {
-    "toggle_relative_line_numbers": true
+    "toggle_relative_line_numbers": true,
+    "use_system_clipboard": "always"
   },
 
   // =============================================
@@ -188,6 +189,16 @@
     "prefer_lsp": true
   },
 
+  // LSP configuration
+  "lsp": {
+    "ruff": {
+      "settings": {
+        "configuration": "./pyproject.toml",
+        "fixAll": true
+      }
+    }
+  },
+
   // File scanning exclusions
   "file_scan_exclusions": [
     // Zed defaults
@@ -218,6 +229,11 @@
   // =============================================
   // PANELS & INTERFACE LAYOUT
   // =============================================
+
+  // Toolbar
+  "toolbar": {
+    "breadcrumbs": true
+  },
 
   // Title bar
   "title_bar": {
@@ -259,6 +275,7 @@
   "terminal": {
     "line_height": "standard",
     "dock": "left",
+    "copy_on_select": true,
     "toolbar": {
       "breadcrumbs": true
     }
@@ -286,6 +303,17 @@
   // LANGUAGE-SPECIFIC SETTINGS
   // =============================================
   "languages": {
+    "Python": {
+      "tab_size": 4,
+      "indent_size": 4,
+      "language_servers": ["ruff"],
+      "formatter": {
+        "external": {
+          "command": "uvx",
+          "arguments": ["ruff", "format", "-"]
+        }
+      }
+    },
     "TypeScript": {
       "code_actions_on_format": {
         "source.organizeImports": true
