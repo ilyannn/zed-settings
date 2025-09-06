@@ -188,6 +188,33 @@
     "prefer_lsp": true
   },
 
+  // File scanning exclusions
+  "file_scan_exclusions": [
+    // Zed defaults
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/.jj",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings",
+
+    // Additional files to exclude
+    "**/.venv",
+    "**/venv",
+    "**/.mypy_cache",
+    "**/.pytest_cache",
+    "**/.ruff_cache",
+    "**/.cache",
+    "**/.idea",
+    "**/.vscode",
+    "**/node_modules",
+    "**/dist",
+    "**/build"
+  ],
+
   // =============================================
   // PANELS & INTERFACE LAYOUT
   // =============================================
