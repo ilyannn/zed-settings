@@ -11,10 +11,10 @@
   // APPEARANCE & THEME
   // =============================================
   // Visual theme configuration for editor and UI
-  
+
   // Icon theme for file types in the file tree
   "icon_theme": "Catppuccin Latte",
-  
+
   // Editor color theme - using Dayfox with opaque background
   "theme": "Dayfox - opaque",
 
@@ -22,7 +22,7 @@
   // PRIVACY & TELEMETRY
   // =============================================
   // Control data sharing with Zed developers
-  
+
   "telemetry": {
     // Disable diagnostic data collection
     "diagnostics": false,
@@ -34,40 +34,40 @@
   // CORE EDITOR SETTINGS
   // =============================================
   // Essential editor behavior and functionality
-  
+
   // --- File Operations ---
   // Automatically save files when switching windows
   "autosave": "on_window_change",
-  
+
   // Remove trailing whitespace characters when saving
   "remove_trailing_whitespace_on_save": true,
-  
+
   // Auto-format code when saving files
   "format_on_save": "on",
-  
+
   // --- Keybindings & Navigation ---
   // Use Cursor-style keybindings as base
   "base_keymap": "Cursor",
-  
+
   // Show line numbers relative to cursor position (useful for Vim)
   "relative_line_numbers": true,
-  
+
   // Wrap long lines at editor width
   "soft_wrap": "editor_width",
-  
+
   // Keep 10 lines visible above/below cursor when scrolling
   "vertical_scroll_margin": 10,
-  
+
   // Allow scrolling one page past the last line
   "scroll_beyond_last_line": "one_page",
-  
+
   // Auto-scroll to cursor position when clicking
   "autoscroll_on_clicks": true,
 
   // --- Search & Find ---
   // Use smart case for searches (case-insensitive unless uppercase is used)
   "use_smartcase_search": true,
-  
+
   // Always use text under cursor as initial search query
   "seed_search_query_from_cursor": "always",
 
@@ -82,47 +82,47 @@
   // --- Editor Display ---
   // Show whitespace characters only in selected text
   "show_whitespaces": "selection",
-  
+
   // Line number display configuration
   "gutter": {
     // Minimum digits for line numbers (e.g., 001, 002)
     "min_line_number_digits": 3
   },
-  
+
   // Highlight active pane with a thicker border
   "active_pane_modifiers": {
     "border_size": 2
   },
-  
+
   // Color indent guides based on indentation level
   "indent_guides": {
     "coloring": "indent_aware"
   },
-  
+
   // Show detailed line position indicator
   "line_indicator_format": "long",
-  
+
   // Fade unused/unreachable code to 50% opacity
   "unnecessary_code_fade": 0.5,
 
   // --- Auto-completion & Helpers ---
   // Automatically close brackets, quotes, etc.
   "use_autoclose": true,
-  
+
   // Automatically surround selected text with brackets/quotes
   "use_auto_surround": true,
-  
+
   // Auto-close JSX/HTML tags
   "jsx_tag_auto_close": {
     "enabled": true
   },
-  
+
   // Enable hover tooltips for documentation
   "hover_popover_enabled": true,
-  
+
   // Enable linked editing (rename all occurrences simultaneously)
   "linked_edits": true,
-  
+
   // Show function signature help automatically
   "auto_signature_help": true,
 
@@ -130,16 +130,16 @@
   // FONTS & TYPOGRAPHY
   // =============================================
   // Font settings for UI and editor
-  
+
   // UI font size (menus, panels, etc.)
   "ui_font_size": 15,
-  
+
   // Editor font family - using Input Mono for coding
   "buffer_font_family": "Input Mono",
-  
+
   // Editor font size
   "buffer_font_size": 12,
-  
+
   // Line height spacing - comfortable for readability
   "buffer_line_height": "comfortable",
 
@@ -147,10 +147,10 @@
   // VIM MODE CONFIGURATION
   // =============================================
   // Vim emulation settings for modal editing
-  
+
   // Enable Vim mode for modal editing
   "vim_mode": true,
-  
+
   "vim": {
     // Toggle relative line numbers based on mode
     "toggle_relative_line_numbers": true,
@@ -162,7 +162,7 @@
   // VERSION CONTROL (GIT)
   // =============================================
   // Git integration and display settings
-  
+
   "git": {
     // Show inline blame information in the editor
     "inline_blame": {
@@ -175,7 +175,7 @@
     // Show unstaged changes with hollow markers
     "hunk_style": "unstaged_hollow"
   },
-  
+
   // Git panel placement in the interface
   "git_panel": {
     "dock": "right"
@@ -185,16 +185,16 @@
   // AI & CODE INTELLIGENCE
   // =============================================
   // AI features, predictions, and code intelligence
-  
+
   // --- Edit Predictions ---
   // Show AI-powered edit predictions inline
   "show_edit_predictions": true,
-  
+
   // Use GitHub Copilot for predictions
   "features": {
     "edit_prediction_provider": "copilot"
   },
-  
+
   // Detailed edit prediction configuration
   "edit_predictions": {
     // No files excluded from predictions
@@ -243,7 +243,7 @@
     // Show other helpful hints
     "show_other_hints": true
   },
-  
+
   // Code completion settings
   "completions": {
     // Use word-based completions as fallback
@@ -254,7 +254,7 @@
   // DIAGNOSTICS & ERROR HANDLING
   // =============================================
   // Configuration for error display and diagnostics
-  
+
   "diagnostics": {
     // Show diagnostics button in toolbar
     "button": true,
@@ -279,7 +279,7 @@
       "max_severity": "warning"
     }
   },
-  
+
   // Maximum severity to display in diagnostics panel
   "diagnostics_max_severity": "error",
 
@@ -287,7 +287,7 @@
   // LANGUAGE SERVER PROTOCOL (LSP)
   // =============================================
   // Configuration for language servers
-  
+
   "lsp": {
     // Ruff (Python linter/formatter) configuration
     "ruff": {
@@ -302,22 +302,22 @@
   // FILE & PROJECT MANAGEMENT
   // =============================================
   // File handling and project organization
-  
+
   // File finder modal size
   "file_finder": {
     "modal_max_width": "medium"
   },
-  
+
   // Don't use system path prompts in dialogs
   "use_system_path_prompts": false,
-  
+
   // Task runner configuration
   "tasks": {
     "enabled": true,
     // Prefer LSP-provided tasks over generic ones
     "prefer_lsp": true
   },
-  
+
   // --- File Scanning Exclusions ---
   // Patterns for files/folders to ignore in file tree and search
   "file_scan_exclusions": [
@@ -327,27 +327,27 @@
     "**/.hg",
     "**/.jj",
     "**/CVS",
-    
+
     // OS-specific files
     "**/.DS_Store",
     "**/Thumbs.db",
-    
+
     // IDE/Editor directories
     "**/.classpath",
     "**/.settings",
     "**/.idea",
     "**/.vscode",
-    
+
     // Python virtual environments and caches
     "**/.venv",
     "**/venv",
     "**/.mypy_cache",
     "**/.pytest_cache",
     "**/.ruff_cache",
-    
+
     // General cache directories
     "**/.cache",
-    
+
     // Node.js and build outputs
     "**/node_modules",
     "**/dist",
@@ -358,14 +358,14 @@
   // USER INTERFACE LAYOUT
   // =============================================
   // Configuration for panels, toolbars, and UI elements
-  
+
   // --- Toolbar & Title Bar ---
   // Top toolbar configuration
   "toolbar": {
     // Show file breadcrumbs in toolbar
     "breadcrumbs": true
   },
-  
+
   // Title bar display settings
   "title_bar": {
     // Show git branch icon
@@ -386,7 +386,7 @@
     // Show tab management buttons
     "show_tab_bar_buttons": true
   },
-  
+
   // Individual tab display settings
   "tabs": {
     // Show file type icons in tabs
@@ -436,23 +436,23 @@
 
   // --- Hidden/Disabled Panels ---
   // Panels that are hidden or have buttons disabled
-  
+
   // Collaboration features (disabled)
   "collaboration_panel": {
     "button": false,
     "dock": "right"
   },
-  
+
   // Chat panel (never show button)
   "chat_panel": {
     "button": "never"
   },
-  
+
   // Search panel (hide button)
   "search": {
     "button": false
   },
-  
+
   // Outline panel (hide button)
   "outline_panel": {
     "button": false
@@ -462,7 +462,7 @@
   // LANGUAGE-SPECIFIC SETTINGS
   // =============================================
   // Per-language configurations and formatters
-  
+
   "languages": {
     // --- Python ---
     "Python": {
@@ -478,7 +478,7 @@
         }
       }
     },
-    
+
     // --- TypeScript ---
     "TypeScript": {
       // Auto-organize imports on format
@@ -486,7 +486,7 @@
         "source.organizeImports": true
       }
     },
-    
+
     // --- JavaScript ---
     "JavaScript": {
       // Auto-organize imports on format
@@ -494,7 +494,7 @@
         "source.organizeImports": true
       }
     },
-    
+
     // --- TSX (TypeScript React) ---
     "TSX": {
       // Auto-organize imports on format
@@ -502,7 +502,7 @@
         "source.organizeImports": true
       }
     },
-    
+
     // --- JSONC (JSON with Comments) ---
     // No specific settings, but language is recognized
     "JSONC": {}
