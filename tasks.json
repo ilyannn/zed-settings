@@ -119,5 +119,15 @@
     "use_new_terminal": false,
     "allow_concurrent_runs": true,
     "hide": "never"
+  },
+  {
+    // Just: Run tests
+    "label": "Just: Test",
+    "command": "just",
+    "args": ["test"],
+    "reveal": "always",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": true,
+    "hide": "never"
   }
 ]
