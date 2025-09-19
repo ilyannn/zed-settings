@@ -18,6 +18,21 @@
     "reveal_target": "dock"
   },
   {
+    // Codex CLI - Interactive AI assistant for coding tasks
+    "label": "codex",
+    "command": "codex",
+    // Always show the terminal when starting Codex
+    "reveal": "always",
+    // Start Codex in a new terminal tab for clean session
+    "use_new_terminal": true,
+    // Prevent multiple Codex instances to avoid split sessions
+    "allow_concurrent_runs": false,
+    // Keep the terminal open after Codex exits so you can review the session
+    "hide": "never",
+    // Place in the terminal dock (not the main editor area)
+    "reveal_target": "dock"
+  },
+  {
     // Claude: Create commit with AI assistance
     "label": "Claude: Commit",
     "command": "claude",
