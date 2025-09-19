@@ -450,11 +450,6 @@
     "dock": "right"
   },
 
-  // Chat panel (never show button)
-  "chat_panel": {
-    "button": "never"
-  },
-
   // Search panel (hide button)
   "search": {
     "button": false
@@ -555,7 +550,9 @@
     },
 
     // --- JSONC (JSON with Comments) ---
-    // No specific settings, but language is recognized
-    "JSONC": {}
+    "JSONC": {
+      // Disable language servers to avoid false trailing comma warnings
+      "language_servers": []
+    }
   }
 }
