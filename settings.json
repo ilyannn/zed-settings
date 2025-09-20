@@ -12,11 +12,19 @@
   // =============================================
   // Visual theme configuration for editor and UI
 
-  // Icon theme for file types in the file tree
-  "icon_theme": "Catppuccin Latte",
+  // Editor color theme - using Catppuccin
+  "theme": {
+    "mode": "system",
+    "dark": "Catppuccin Macchiato (Blur) [Heavy]",
+    "light": "Catppuccin Latte (Blur) [Heavy]"
+  },
 
-  // Editor color theme - using Dayfox with opaque background
-  "theme": "Dayfox - opaque",
+  // Icon theme for file tree - agrees with the main theme
+  "icon_theme": {
+    "mode": "system",
+    "dark": "Catppuccin Mocha",
+    "light": "Catppuccin Latte"
+  },
 
   // =============================================
   // PRIVACY & TELEMETRY
@@ -552,6 +560,7 @@
     // --- JSONC (JSON with Comments) ---
     "JSONC": {
       // Disable language servers to avoid false trailing comma warnings
+      // Unfortunately this also disables smart editing of settings.json
       "language_servers": []
     }
   }
