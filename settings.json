@@ -310,6 +310,15 @@
         // Require biome.json config file to be present
         "require_config_file": true
       }
+    },
+    // TypeScript Language Server init options (moved from languages.TypeScript)
+    "typescript-language-server": {
+      "initialization_options": {
+        "preferences": {
+          "includeCompletionsForModuleExports": true,
+          "includeCompletionsWithInsertText": true
+        }
+      }
     }
   },
 
@@ -503,18 +512,7 @@
         "source.fixAll.biome": true
       },
       // Use TypeScript language server with proper project support
-      "language_servers": ["typescript-language-server", "..."],
-      // Configure language server initialization options
-      "language_server_initialization_options": {
-        "typescript": {
-          "preferences": {
-            "includeCompletionsForModuleExports": true,
-            "includeCompletionsWithInsertText": true
-          }
-        }
-      },
-      // Ensure TypeScript uses the project's tsconfig.json
-      "use_project_tsconfig": true
+      "language_servers": ["typescript-language-server", "..."]
     },
 
     // --- JavaScript ---
@@ -561,7 +559,7 @@
     "JSONC": {
       // Disable language servers to avoid false trailing comma warnings
       // Unfortunately this also disables smart editing of settings.json
-      "language_servers": []
+      //      "language_servers": []
     }
   }
 }
