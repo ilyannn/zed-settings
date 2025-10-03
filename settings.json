@@ -22,7 +22,7 @@
   // Icon theme for file tree - agrees with the main theme
   "icon_theme": {
     "mode": "system",
-    "dark": "Catppuccin Mocha",
+    "dark": "Catppuccin Macchiato",
     "light": "Catppuccin Latte"
   },
 
