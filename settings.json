@@ -15,14 +15,14 @@
   // Editor color theme - using Catppuccin
   "theme": {
     "mode": "system",
-    "dark": "Catppuccin Macchiato (Blur) [Heavy]",
+    "dark": "Catppuccin Espresso (Blur) [Light]",
     "light": "Catppuccin Latte (Blur) [Heavy]"
   },
 
   // Icon theme for file tree - agrees with the main theme
   "icon_theme": {
     "mode": "system",
-    "dark": "Catppuccin Macchiato",
+    "dark": "Catppuccin Mocha",
     "light": "Catppuccin Latte"
   },
 
@@ -172,6 +172,11 @@
   // Git integration and display settings
 
   "git": {
+    // Show more information in the branch picker
+    "branch_picker": {
+      "show_author_name": true
+    },
+
     // Show inline blame information in the editor
     "inline_blame": {
       "enabled": true,
@@ -180,6 +185,7 @@
       // Include commit message summary in blame
       "show_commit_summary": true
     },
+
     // Show unstaged changes with hollow markers
     "hunk_style": "unstaged_hollow"
   },
