@@ -483,6 +483,11 @@
     "button": false
   },
 
+  // Debugger panel (disabled)
+  "debugger": {
+    "button": false
+  },
+
   // =============================================
   // LANGUAGE-SPECIFIC SETTINGS
   // =============================================
@@ -507,16 +512,20 @@
     // --- TypeScript ---
     "TypeScript": {
       // Use Biome language server for formatting
-      "formatter": {
-        "language_server": {
-          "name": "biome"
+      "formatter": [
+        {
+          "code_action": "source.organizeImports.biome"
+        },
+        {
+          "code_action": "source.fixAll.biome"
+        },
+        {
+          "language_server": {
+            "name": "biome"
+          }
         }
-      },
+      ],
       // Auto-organize imports and fix all issues on format
-      "code_actions_on_format": {
-        "source.organizeImports.biome": true,
-        "source.fixAll.biome": true
-      },
       // Use TypeScript language server with proper project support
       "language_servers": ["typescript-language-server", "..."]
     },
@@ -524,35 +533,42 @@
     // --- JavaScript ---
     "JavaScript": {
       // Use Biome language server for formatting
-      "formatter": {
-        "language_server": {
-          "name": "biome"
+      "formatter": [
+        {
+          "code_action": "source.organizeImports.biome"
+        },
+        {
+          "code_action": "source.fixAll.biome"
+        },
+        {
+          "language_server": {
+            "name": "biome"
+          }
         }
-      },
-      // Auto-organize imports and fix all issues on format
-      "code_actions_on_format": {
-        "source.organizeImports.biome": true,
-        "source.fixAll.biome": true
-      }
+      ]
     },
 
     // --- TSX (TypeScript React) ---
     "TSX": {
       // Use Biome language server for formatting
-      "formatter": {
-        "language_server": {
-          "name": "biome"
+      "formatter": [
+        {
+          "code_action": "source.organizeImports.biome"
+        },
+        {
+          "code_action": "source.fixAll.biome"
+        },
+        {
+          "language_server": {
+            "name": "biome"
+          }
         }
-      },
-      // Auto-organize imports and fix all issues on format
-      "code_actions_on_format": {
-        "source.organizeImports.biome": true,
-        "source.fixAll.biome": true
-      }
+      ]
     },
 
     // --- JSON ---
     "JSON": {
+      "tab_size": 2,
       // Use Biome language server for formatting
       "formatter": {
         "language_server": {
