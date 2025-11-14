@@ -58,7 +58,7 @@
   "base_keymap": "Cursor",
 
   // Show line numbers relative to cursor position (useful for Vim)
-  "relative_line_numbers": true,
+  "relative_line_numbers": "enabled",
 
   // Wrap long lines at editor width
   "soft_wrap": "editor_width",
