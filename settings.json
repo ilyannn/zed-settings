@@ -15,8 +15,8 @@
   // Editor color theme - using Catppuccin
   "theme": {
     "mode": "system",
-    "dark": "Catppuccin Espresso (Blur) [Light]",
-    "light": "Catppuccin Latte (Blur) [Heavy]"
+    "dark": "Tiniri Dark",
+    "light": "Tiniri Light"
   },
 
   // Icon theme for file tree - agrees with the main theme
