@@ -495,6 +495,9 @@
 
   "languages": {
     // --- Python ---
+    "Shell Script": {
+      "show_edit_predictions": false
+    },
     "Python": {
       // Use 4 spaces for indentation (PEP 8)
       "tab_size": 4,
