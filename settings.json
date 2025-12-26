@@ -146,7 +146,7 @@
   "buffer_font_family": "Input Mono",
 
   // Editor font size
-  "buffer_font_size": 12,
+  "buffer_font_size": 14,
 
   // Line height spacing - comfortable for readability
   "buffer_line_height": "comfortable",
