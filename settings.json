@@ -16,14 +16,14 @@
   "theme": {
     "mode": "system",
     "dark": "Tiniri Dark",
-    "light": "Tiniri Light"
+    "light": "Tiniri Light",
   },
 
   // Icon theme for file tree - agrees with the main theme
   "icon_theme": {
     "mode": "system",
     "dark": "Catppuccin Macchiato",
-    "light": "Catppuccin Latte"
+    "light": "Catppuccin Latte",
   },
 
   // =============================================
@@ -35,7 +35,7 @@
     // Disable diagnostic data collection
     "diagnostics": false,
     // Disable usage metrics collection
-    "metrics": false
+    "metrics": false,
   },
 
   // =============================================
@@ -84,7 +84,7 @@
   "preview_tabs": {
     "enabled": true,
     // Also use preview tabs when opening from file finder
-    "enable_preview_from_file_finder": true
+    "enable_preview_from_file_finder": true,
   },
 
   // --- Editor Display ---
@@ -94,17 +94,17 @@
   // Line number display configuration
   "gutter": {
     // Minimum digits for line numbers (e.g., 001, 002)
-    "min_line_number_digits": 3
+    "min_line_number_digits": 3,
   },
 
   // Highlight active pane with a thicker border
   "active_pane_modifiers": {
-    "border_size": 2
+    "border_size": 2,
   },
 
   // Color indent guides based on indentation level
   "indent_guides": {
-    "coloring": "indent_aware"
+    "coloring": "indent_aware",
   },
 
   // Show detailed line position indicator
@@ -122,7 +122,7 @@
 
   // Auto-close JSX/HTML tags
   "jsx_tag_auto_close": {
-    "enabled": true
+    "enabled": true,
   },
 
   // Enable hover tooltips for documentation
@@ -163,7 +163,7 @@
     // Toggle relative line numbers based on mode
     "toggle_relative_line_numbers": true,
     // Always use system clipboard for yank/paste operations
-    "use_system_clipboard": "always"
+    "use_system_clipboard": "always",
   },
 
   // =============================================
@@ -174,7 +174,7 @@
   "git": {
     // Show more information in the branch picker
     "branch_picker": {
-      "show_author_name": true
+      "show_author_name": true,
     },
 
     // Show inline blame information in the editor
@@ -183,16 +183,16 @@
       // Start showing blame info at column 50
       "min_column": 50,
       // Include commit message summary in blame
-      "show_commit_summary": true
+      "show_commit_summary": true,
     },
 
     // Show unstaged changes with hollow markers
-    "hunk_style": "unstaged_hollow"
+    "hunk_style": "unstaged_hollow",
   },
 
   // Git panel placement in the interface
   "git_panel": {
-    "dock": "right"
+    "dock": "right",
   },
 
   // =============================================
@@ -206,7 +206,7 @@
 
   // Use GitHub Copilot for predictions
   "features": {
-    "edit_prediction_provider": "copilot"
+    "edit_prediction_provider": "copilot",
   },
 
   // Detailed edit prediction configuration
@@ -219,10 +219,10 @@
     "copilot": {
       "proxy": null,
       "proxy_no_verify": null,
-      "enterprise_uri": null
+      "enterprise_uri": null,
     },
     // Disable predictions in text threads/chat
-    "enabled_in_text_threads": false
+    "enabled_in_text_threads": false,
   },
 
   // --- Custom Language Models ---
@@ -239,11 +239,11 @@
             // Token limits for the model
             "max_tokens": 272000,
             "max_output_tokens": 128000,
-            "max_completion_tokens": 200000
-          }
-        ]
-      }
-    }
+            "max_completion_tokens": 200000,
+          },
+        ],
+      },
+    },
   },
 
   // --- Code Intelligence ---
@@ -255,13 +255,13 @@
     // Show parameter names in function calls
     "show_parameter_hints": true,
     // Show other helpful hints
-    "show_other_hints": true
+    "show_other_hints": true,
   },
 
   // Code completion settings
   "completions": {
     // Use word-based completions as fallback
-    "words": "fallback"
+    "words": "fallback",
   },
 
   // =============================================
@@ -278,7 +278,7 @@
     "lsp_pull_diagnostics": {
       "enabled": true,
       // Debounce time for pulling diagnostics
-      "debounce_ms": 50
+      "debounce_ms": 50,
     },
     // Inline diagnostic display configuration
     "inline": {
@@ -290,8 +290,8 @@
       // Start showing diagnostics at column 50
       "min_column": 50,
       // Show up to warning severity inline
-      "max_severity": "warning"
-    }
+      "max_severity": "warning",
+    },
   },
 
   // Maximum severity to display in diagnostics panel
@@ -307,25 +307,25 @@
     "ruff": {
       "settings": {
         // Auto-fix all fixable issues
-        "fixAll": true
-      }
+        "fixAll": true,
+      },
     },
     // Biome (JavaScript/TypeScript linter/formatter) configuration
     "biome": {
       "settings": {
         // Require biome.json config file to be present
-        "require_config_file": true
-      }
+        "require_config_file": true,
+      },
     },
     // TypeScript Language Server init options (moved from languages.TypeScript)
     "typescript-language-server": {
       "initialization_options": {
         "preferences": {
           "includeCompletionsForModuleExports": true,
-          "includeCompletionsWithInsertText": true
-        }
-      }
-    }
+          "includeCompletionsWithInsertText": true,
+        },
+      },
+    },
   },
 
   // =============================================
@@ -335,7 +335,7 @@
 
   // File finder modal size
   "file_finder": {
-    "modal_max_width": "medium"
+    "modal_max_width": "medium",
   },
 
   // Don't use system path prompts in dialogs
@@ -345,7 +345,7 @@
   "tasks": {
     "enabled": true,
     // Prefer LSP-provided tasks over generic ones
-    "prefer_lsp": true
+    "prefer_lsp": true,
   },
 
   // --- File Scanning Exclusions ---
@@ -381,7 +381,7 @@
     // Node.js and build outputs
     "**/node_modules",
     "**/dist",
-    "**/build"
+    "**/build",
   ],
 
   // =============================================
@@ -393,7 +393,7 @@
   // Top toolbar configuration
   "toolbar": {
     // Show file breadcrumbs in toolbar
-    "breadcrumbs": true
+    "breadcrumbs": true,
   },
 
   // Title bar display settings
@@ -403,7 +403,7 @@
     // Hide sign-in button
     "show_sign_in": false,
     // Hide user profile picture
-    "show_user_picture": false
+    "show_user_picture": false,
   },
 
   // --- Tab Bar ---
@@ -414,7 +414,7 @@
     // Hide navigation history buttons
     "show_nav_history_buttons": false,
     // Show tab management buttons
-    "show_tab_bar_buttons": true
+    "show_tab_bar_buttons": true,
   },
 
   // Individual tab display settings
@@ -422,7 +422,7 @@
     // Show file type icons in tabs
     "file_icons": true,
     // Show git status in tabs
-    "git_status": true
+    "git_status": true,
   },
 
   // --- AI Agent Panel ---
@@ -435,7 +435,7 @@
     // Don't expand edit cards by default
     "expand_edit_card": false,
     // Notify on all screens when agent is waiting
-    "notify_when_agent_waiting": "all_screens"
+    "notify_when_agent_waiting": "all_screens",
   },
 
   // --- Terminal ---
@@ -449,8 +449,8 @@
     "copy_on_select": true,
     "toolbar": {
       // Show breadcrumbs in terminal toolbar
-      "breadcrumbs": true
-    }
+      "breadcrumbs": true,
+    },
   },
 
   // --- Project Panel ---
@@ -461,7 +461,7 @@
     // Indentation size for nested items
     "indent_size": 16,
     // Standard spacing between entries
-    "entry_spacing": "standard"
+    "entry_spacing": "standard",
   },
 
   // --- Hidden/Disabled Panels ---
@@ -470,22 +470,22 @@
   // Collaboration features (disabled)
   "collaboration_panel": {
     "button": false,
-    "dock": "right"
+    "dock": "right",
   },
 
   // Search panel (hide button)
   "search": {
-    "button": false
+    "button": false,
   },
 
   // Outline panel (hide button)
   "outline_panel": {
-    "button": false
+    "button": false,
   },
 
   // Debugger panel (disabled)
   "debugger": {
-    "button": false
+    "button": false,
   },
 
   // =============================================
@@ -496,7 +496,7 @@
   "languages": {
     // --- Python ---
     "Shell Script": {
-      "show_edit_predictions": false
+      "show_edit_predictions": false,
     },
     "Python": {
       // Use 4 spaces for indentation (PEP 8)
@@ -507,9 +507,9 @@
       "formatter": {
         "external": {
           "command": "uvx",
-          "arguments": ["ruff", "format", "-"]
-        }
-      }
+          "arguments": ["ruff", "format", "-"],
+        },
+      },
     },
 
     // --- TypeScript ---
@@ -517,20 +517,20 @@
       // Use Biome language server for formatting
       "formatter": [
         {
-          "code_action": "source.organizeImports.biome"
+          "code_action": "source.organizeImports.biome",
         },
         {
-          "code_action": "source.fixAll.biome"
+          "code_action": "source.fixAll.biome",
         },
         {
           "language_server": {
-            "name": "biome"
-          }
-        }
+            "name": "biome",
+          },
+        },
       ],
       // Auto-organize imports and fix all issues on format
       // Use TypeScript language server with proper project support
-      "language_servers": ["typescript-language-server", "..."]
+      "language_servers": ["typescript-language-server", "..."],
     },
 
     // --- JavaScript ---
@@ -538,17 +538,17 @@
       // Use Biome language server for formatting
       "formatter": [
         {
-          "code_action": "source.organizeImports.biome"
+          "code_action": "source.organizeImports.biome",
         },
         {
-          "code_action": "source.fixAll.biome"
+          "code_action": "source.fixAll.biome",
         },
         {
           "language_server": {
-            "name": "biome"
-          }
-        }
-      ]
+            "name": "biome",
+          },
+        },
+      ],
     },
 
     // --- TSX (TypeScript React) ---
@@ -556,17 +556,17 @@
       // Use Biome language server for formatting
       "formatter": [
         {
-          "code_action": "source.organizeImports.biome"
+          "code_action": "source.organizeImports.biome",
         },
         {
-          "code_action": "source.fixAll.biome"
+          "code_action": "source.fixAll.biome",
         },
         {
           "language_server": {
-            "name": "biome"
-          }
-        }
-      ]
+            "name": "biome",
+          },
+        },
+      ],
     },
 
     // --- JSON ---
@@ -575,9 +575,9 @@
       // Use Biome language server for formatting
       "formatter": {
         "language_server": {
-          "name": "biome"
-        }
-      }
+          "name": "biome",
+        },
+      },
     },
 
     // --- JSONC (JSON with Comments) ---
@@ -585,6 +585,6 @@
       // Disable language servers to avoid false trailing comma warnings
       // Unfortunately this also disables smart editing of settings.json
       //      "language_servers": []
-    }
-  }
+    },
+  },
 }
