@@ -12,14 +12,14 @@
   // =============================================
   // Visual theme configuration for editor and UI
 
-  // Editor color theme - using Catppuccin
+  // Editor color theme - using Tiniri
   "theme": {
     "mode": "system",
     "dark": "Tiniri Dark",
     "light": "Tiniri Light",
   },
 
-  // Icon theme for file tree - agrees with the main theme
+  // Icon theme for file tree
   "icon_theme": {
     "mode": "system",
     "dark": "Catppuccin Macchiato",
@@ -105,6 +105,16 @@
   // Color indent guides based on indentation level
   "indent_guides": {
     "coloring": "indent_aware",
+  },
+
+  // Keep scope context visible when scrolling large files
+  "sticky_scroll": {
+    "enabled": true,
+  },
+
+  // Code minimap for file overview
+  "minimap": {
+    "show": "auto",
   },
 
   // Show detailed line position indicator
@@ -211,8 +221,6 @@
 
   // Detailed edit prediction configuration
   "edit_predictions": {
-    // No files excluded from predictions
-    "disabled_globs": [],
     // Show predictions eagerly as you type
     "mode": "subtle",
     // Copilot configuration
@@ -450,6 +458,13 @@
     "toolbar": {
       // Show breadcrumbs in terminal toolbar
       "breadcrumbs": true,
+    },
+    // Auto-activate Python virtual environments
+    "detect_venv": {
+      "on": {
+        "directories": [".venv", "venv", ".env"],
+        "activate_script": "default",
+      },
     },
   },
 
