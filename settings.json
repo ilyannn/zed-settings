@@ -63,15 +63,6 @@
   // Wrap long lines at editor width
   "soft_wrap": "editor_width",
 
-  // Keep 10 lines visible above/below cursor when scrolling
-  "vertical_scroll_margin": 10,
-
-  // Allow scrolling one page past the last line
-  "scroll_beyond_last_line": "one_page",
-
-  // Auto-scroll to cursor position when clicking
-  "autoscroll_on_clicks": true,
-
   // --- Search & Find ---
   // Use smart case for searches (case-insensitive unless uppercase is used)
   "use_smartcase_search": true,
@@ -107,6 +98,18 @@
     "coloring": "indent_aware",
   },
 
+  "wrap_guides": [80],
+
+  // --- Scrolling ---
+  // Keep 10 lines visible above/below cursor when scrolling
+  "vertical_scroll_margin": 10,
+
+  // Allow scrolling one page past the last line
+  "scroll_beyond_last_line": "vertical_scroll_margin",
+
+  // Auto-scroll to cursor position when clicking
+  "autoscroll_on_clicks": true,
+
   // Keep scope context visible when scrolling large files
   "sticky_scroll": {
     "enabled": true,
@@ -117,11 +120,17 @@
     "show": "auto",
   },
 
+  // Hide scrollbar when there is no information
+  "scrollbar": {
+    "show": "auto",
+    "diagnostics": "warning",
+  },
+
   // Show detailed line position indicator
   "line_indicator_format": "long",
 
-  // Fade unused/unreachable code to 50% opacity
-  "unnecessary_code_fade": 0.5,
+  // Fade unused/unreachable code to 40% opacity
+  "unnecessary_code_fade": 0.4,
 
   // --- Auto-completion & Helpers ---
   // Automatically close brackets, quotes, etc.
