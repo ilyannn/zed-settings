@@ -57,9 +57,6 @@
   // Use Cursor-style keybindings as base
   "base_keymap": "Cursor",
 
-  // Show line numbers relative to cursor position (useful for Vim)
-  "relative_line_numbers": "enabled",
-
   // Wrap long lines at editor width
   "soft_wrap": "editor_width",
 
@@ -183,6 +180,11 @@
     "toggle_relative_line_numbers": true,
     // Always use system clipboard for yank/paste operations
     "use_system_clipboard": "always",
+  },
+
+  "which_key": {
+    "enabled": true,
+    "delay_ms": 200,
   },
 
   // =============================================
