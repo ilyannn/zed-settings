@@ -403,6 +403,32 @@
     "**/build",
   ],
 
+  // Patterns for files that should open as read-only
+  "read_only_files": [
+    // Node.js lock files
+    "**/package-lock.json",
+    "**/yarn.lock",
+    "**/pnpm-lock.yaml",
+    "**/bun.lockb",
+
+    // Python lock files
+    "**/poetry.lock",
+    "**/Pipfile.lock",
+    "**/uv.lock",
+
+    // TeX generated files
+    "**/*.aux",
+    "**/*.bbl",
+    "**/*.blg",
+    "**/*.fdb_latexmk",
+    "**/*.fls",
+    "**/*.synctex.gz",
+    "**/*.toc",
+    "**/*.lof",
+    "**/*.lot",
+    "**/*.out",
+  ],
+
   // =============================================
   // USER INTERFACE LAYOUT
   // =============================================
