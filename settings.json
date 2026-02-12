@@ -225,22 +225,10 @@
   // AI features, predictions, and code intelligence
 
   // --- Edit Predictions ---
-  // Show AI-powered edit predictions inline
-  "show_edit_predictions": true,
-
-  // Detailed edit prediction configuration
+  // Disabled
+  "show_edit_predictions": false,
   "edit_predictions": {
-    // Use GitHub Copilot for predictions
-    "provider": "copilot",
-    "mode": "subtle",
-    // Copilot configuration
-    "copilot": {
-      "proxy": null,
-      "proxy_no_verify": null,
-      "enterprise_uri": null,
-    },
-    // Disable predictions in text threads/chat
-    "enabled_in_text_threads": false,
+    "provider": "none",
   },
 
   // --- Custom Language Models ---
