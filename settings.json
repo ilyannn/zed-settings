@@ -13,6 +13,9 @@
   // Visual theme configuration for editor and UI
 
   // Editor color theme - using Tiniri
+  "session": {
+    "trust_all_worktrees": true
+  },
   "theme": {
     "mode": "system",
     "dark": "Tiniri Dark",
@@ -225,14 +228,10 @@
   // Show AI-powered edit predictions inline
   "show_edit_predictions": true,
 
-  // Use GitHub Copilot for predictions
-  "features": {
-    "edit_prediction_provider": "copilot",
-  },
-
   // Detailed edit prediction configuration
   "edit_predictions": {
-    // Show predictions eagerly as you type
+    // Use GitHub Copilot for predictions
+    "provider": "copilot",
     "mode": "subtle",
     // Copilot configuration
     "copilot": {
@@ -320,6 +319,9 @@
   // LANGUAGE SERVER PROTOCOL (LSP)
   // =============================================
   // Configuration for language servers
+
+  // Use LSP-provided code folding ranges instead of indentation-based
+  "lsp_folding_ranges": "on",
 
   "lsp": {
     // Ruff (Python linter/formatter) configuration
