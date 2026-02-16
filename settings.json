@@ -13,9 +13,6 @@
   // Visual theme configuration for editor and UI
 
   // Editor color theme - using Tiniri
-  "session": {
-    "trust_all_worktrees": true
-  },
   "theme": {
     "mode": "system",
     "dark": "Tiniri Dark",
@@ -33,6 +30,11 @@
   // PRIVACY & TELEMETRY
   // =============================================
   // Control data sharing with Zed developers
+
+  // Trust all project worktrees (skip confirmation prompts)
+  "session": {
+    "trust_all_worktrees": true,
+  },
 
   "telemetry": {
     // Disable diagnostic data collection
@@ -98,6 +100,7 @@
     "coloring": "indent_aware",
   },
 
+  "preferred_line_length": 80,
   "wrap_guides": [80],
 
   // --- Scrolling ---
@@ -621,6 +624,19 @@
           "name": "biome",
         },
       },
+    },
+
+    // --- Markdown ---
+    "Markdown": {
+      "soft_wrap": "preferred_line_length",
+      "preferred_line_length": 100,
+      "remove_trailing_whitespace_on_save": false,
+    },
+
+    // --- LaTeX ---
+    "LaTeX": {
+      "soft_wrap": "preferred_line_length",
+      "preferred_line_length": 110,
     },
 
     // --- JSONC (JSON with Comments) ---
