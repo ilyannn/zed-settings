@@ -540,10 +540,9 @@
   // Per-language configurations and formatters
 
   "languages": {
+    // --- Shell Script ---
+    "Shell Script": {},
     // --- Python ---
-    "Shell Script": {
-      "show_edit_predictions": false,
-    },
     "Python": {
       // Use 4 spaces for indentation (PEP 8)
       "tab_size": 4,
