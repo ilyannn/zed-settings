@@ -312,9 +312,6 @@
   // =============================================
   // Configuration for language servers
 
-  // Use LSP-provided code folding ranges instead of indentation-based
-  "lsp_folding_ranges": "on",
-
   "lsp": {
     // Ruff (Python linter/formatter) configuration
     "ruff": {
