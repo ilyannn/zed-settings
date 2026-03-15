@@ -56,7 +56,7 @@
   "remove_trailing_whitespace_on_save": true,
 
   // Auto-format code when saving files
-  "format_on_save": "on",
+  "format_on_save": "off",
 
   // --- Keybindings & Navigation ---
   // Use Cursor-style keybindings as base
