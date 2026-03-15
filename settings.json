@@ -221,6 +221,8 @@
   "git_panel": {
     "tree_view": true,
     "dock": "right",
+    // Show +/- line counts per file
+    "diff_stats": true,
   },
 
   // =============================================
@@ -305,7 +307,7 @@
   },
 
   // Maximum severity to display in diagnostics panel
-  "diagnostics_max_severity": "error",
+  "diagnostics_max_severity": "warning",
 
   // =============================================
   // LANGUAGE SERVER PROTOCOL (LSP)
@@ -472,6 +474,8 @@
     "expand_edit_card": false,
     // Notify on all screens when agent is waiting
     "notify_when_agent_waiting": "all_screens",
+    // Don't override git diffs with agent diffs
+    "single_file_review": false,
   },
 
   // --- Terminal ---
@@ -505,6 +509,8 @@
     "indent_size": 16,
     // Standard spacing between entries
     "entry_spacing": "standard",
+    // Show error/warning count badges on files
+    "diagnostic_badges": true,
   },
 
   // --- Hidden/Disabled Panels ---
