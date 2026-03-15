@@ -19,6 +19,17 @@
     "light": "Tiniri Light",
   },
 
+  // Override "active" theme color
+  "experimental.theme_overrides": {
+    "editor.active_line_number": "#66d9a0",
+    "players": [
+      {
+        "cursor": "#66d9a0",
+        "selection": "#66d9a033",
+      },
+    ],
+  },
+
   // Icon theme for file tree
   "icon_theme": {
     "mode": "system",
