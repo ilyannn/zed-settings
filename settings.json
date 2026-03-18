@@ -21,11 +21,11 @@
 
   // Override "active" theme color
   "experimental.theme_overrides": {
-    "editor.active_line_number": "#66d9a0",
+    "editor.active_line_number": "#059669",
     "players": [
       {
-        "cursor": "#66d9a0",
-        "selection": "#66d9a033",
+        "cursor": "#059669",
+        "selection": "#05966933",
       },
     ],
   },
