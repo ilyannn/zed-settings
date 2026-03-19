@@ -367,8 +367,6 @@
   // Task runner configuration
   "tasks": {
     "enabled": true,
-    // Prefer LSP-provided tasks over generic ones
-    "prefer_lsp": true,
   },
 
   // --- File Scanning Exclusions ---
@@ -485,8 +483,6 @@
     "expand_edit_card": false,
     // Notify on all screens when agent is waiting
     "notify_when_agent_waiting": "all_screens",
-    // Don't override git diffs with agent diffs
-    "single_file_review": false,
   },
 
   // --- Terminal ---
@@ -554,8 +550,6 @@
   // Per-language configurations and formatters
 
   "languages": {
-    // --- Shell Script ---
-    "Shell Script": {},
     // --- Python ---
     "Python": {
       // Use 4 spaces for indentation (PEP 8)
