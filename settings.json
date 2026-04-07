@@ -19,15 +19,26 @@
     "light": "Tiniri Light",
   },
 
-  // Override "active" theme color
-  "experimental.theme_overrides": {
-    "editor.active_line_number": "#059669",
-    "players": [
-      {
-        "cursor": "#059669",
-        "selection": "#05966933",
-      },
-    ],
+  // Override "active" theme color (per-theme overrides)
+  "theme_overrides": {
+    "Tiniri Dark": {
+      "editor.active_line_number": "#059669",
+      "players": [
+        {
+          "cursor": "#059669",
+          "selection": "#05966933",
+        },
+      ],
+    },
+    "Tiniri Light": {
+      "editor.active_line_number": "#059669",
+      "players": [
+        {
+          "cursor": "#059669",
+          "selection": "#05966933",
+        },
+      ],
+    },
   },
 
   // Icon theme for file tree
