@@ -53,9 +53,9 @@
   // =============================================
   // Control data sharing with Zed developers
 
-  // Trust all project worktrees (skip confirmation prompts)
+  // Require explicit trust before project settings can launch tools
   "session": {
-    "trust_all_worktrees": true,
+    "trust_all_worktrees": false,
   },
 
   "telemetry": {
@@ -77,8 +77,8 @@
   // Remove trailing whitespace characters when saving
   "remove_trailing_whitespace_on_save": true,
 
-  // Auto-format disabled globally; per-language formatters run on manual format only
-  "format_on_save": "off",
+  // Format only lines changed in Git; skip when range formatting is unavailable
+  "format_on_save": "modifications",
 
   // --- Keybindings & Navigation ---
   // Use Cursor-style keybindings as base
@@ -294,6 +294,9 @@
     "words": "fallback",
   },
 
+  // Show multiple definitions, implementations, or references in a filterable picker
+  "lsp_results_location": "picker",
+
   // =============================================
   // DIAGNOSTICS & ERROR HANDLING
   // =============================================
@@ -333,27 +336,11 @@
   // Configuration for language servers
 
   "lsp": {
-    // Ruff (Python linter/formatter) configuration
-    "ruff": {
-      "settings": {
-        // Auto-fix all fixable issues
-        "fixAll": true,
-      },
-    },
     // Biome (JavaScript/TypeScript linter/formatter) configuration
     "biome": {
       "settings": {
         // Require biome.json config file to be present
         "require_config_file": true,
-      },
-    },
-    // TypeScript Language Server init options (moved from languages.TypeScript)
-    "typescript-language-server": {
-      "initialization_options": {
-        "preferences": {
-          "includeCompletionsForModuleExports": true,
-          "includeCompletionsWithInsertText": true,
-        },
       },
     },
   },
@@ -379,6 +366,7 @@
     "**/.svn",
     "**/.hg",
     "**/.jj",
+    "**/.sl",
     "**/CVS",
 
     // OS-specific files
@@ -398,13 +386,8 @@
     "**/.pytest_cache",
     "**/.ruff_cache",
 
-    // General cache directories
-    "**/.cache",
-
-    // Node.js and build outputs
+    // Node.js dependencies
     "**/node_modules",
-    "**/dist",
-    "**/build",
   ],
 
   // Patterns for files that should open as read-only
@@ -413,6 +396,7 @@
     "**/package-lock.json",
     "**/yarn.lock",
     "**/pnpm-lock.yaml",
+    "**/bun.lock",
     "**/bun.lockb",
 
     // Python lock files
@@ -447,9 +431,9 @@
 
   // Title bar display settings
   "title_bar": {
-    // Show git branch icon
-    "show_branch_icon": true,
+    // Show Git status on the branch icon
     // Hide sign-in button
+    "show_branch_status_icon": true,
     "show_sign_in": false,
     // Hide user profile picture
     "show_user_picture": false,
@@ -538,6 +522,7 @@
 
   // Outline panel (hide button)
   "outline_panel": {
+    "dock": "left",
     "button": false,
   },
 
@@ -556,13 +541,11 @@
     "Python": {
       // Use 4 spaces for indentation (PEP 8)
       "tab_size": 4,
-      // Use Ruff as the language server
-      "language_servers": ["ruff"],
-      // Format using Ruff via uvx (Python tool runner)
+      // Basedpyright provides code intelligence; Ruff provides linting and formatting
+      "language_servers": ["basedpyright", "ruff"],
       "formatter": {
-        "external": {
-          "command": "uvx",
-          "arguments": ["ruff", "format", "-"],
+        "language_server": {
+          "name": "ruff",
         },
       },
     },
@@ -583,9 +566,6 @@
           },
         },
       ],
-      // Auto-organize imports and fix all issues on format
-      // Use TypeScript language server with proper project support
-      "language_servers": ["typescript-language-server", "..."],
     },
 
     // --- JavaScript ---
@@ -648,11 +628,5 @@
       "preferred_line_length": 110,
     },
 
-    // --- JSONC (JSON with Comments) ---
-    "JSONC": {
-      // Disable language servers to avoid false trailing comma warnings
-      // Unfortunately this also disables smart editing of settings.json
-      //      "language_servers": []
-    },
   },
 }
