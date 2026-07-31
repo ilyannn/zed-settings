@@ -367,6 +367,7 @@
     "**/.hg",
     "**/.jj",
     "**/.sl",
+    "**/.repo",
     "**/CVS",
 
     // OS-specific files
@@ -607,12 +608,20 @@
     // --- JSON ---
     "JSON": {
       "tab_size": 2,
+      // Disable the broken Elastic Package extension language server
+      "language_servers": ["!elastic-package-lsp", "..."],
       // Use Biome language server for formatting
       "formatter": {
         "language_server": {
           "name": "biome",
         },
       },
+    },
+
+    // --- YAML ---
+    "YAML": {
+      // Disable the broken Elastic Package extension language server
+      "language_servers": ["!elastic-package-lsp", "..."],
     },
 
     // --- Markdown ---
