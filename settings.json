@@ -71,6 +71,10 @@
   // Essential editor behavior and functionality
 
   // --- File Operations ---
+  // Open paths and projects in new windows
+  "cli_default_open_behavior": "new_window",
+  "default_open_behavior": "new_window",
+
   // Automatically save files when switching windows
   "autosave": "on_window_change",
 
@@ -251,6 +255,9 @@
   // AI & CODE INTELLIGENCE
   // =============================================
   // AI features, predictions, and code intelligence
+
+  // Disable all built-in AI features
+  "disable_ai": true,
 
   // --- Edit Predictions ---
   // Disabled

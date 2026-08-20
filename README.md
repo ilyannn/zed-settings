@@ -9,6 +9,7 @@ TypeScript development with Vim navigation and a compact interface.
 
 - Cursor base keymap with Vim mode, relative line numbers, and system clipboard
 - Auto-save when changing windows
+- CLI paths and UI projects open in new windows
 - Format-on-save limited to Git-modified lines
 - Preview tabs, smart-case search, inline diagnostics, and LSP result pickers
 - Input Mono at 14 px with comfortable line height
@@ -30,7 +31,7 @@ Project-specific Python rules belong in `pyproject.toml`, `ruff.toml`, or
 ### Git and interface
 
 - Inline blame with commit summaries
-- Git and project panels on the right; Agent, terminal, and outline on the left
+- Git and project panels on the right; terminal and outline on the left
 - Lockfiles and generated TeX files open read-only
 - Collaboration, search, outline, and debugger panel buttons are hidden
 
@@ -38,8 +39,7 @@ Project-specific Python rules belong in `pyproject.toml`, `ruff.toml`, or
 
 - Usage metrics and diagnostic telemetry are disabled
 - New worktrees require explicit trust before project settings can launch tools
-- Edit predictions are disabled
-- A local LiteLLM proxy exposes a custom GPT-5 model to the Agent Panel
+- Built-in AI features and edit predictions are disabled
 
 ### File scanning
 
@@ -67,11 +67,15 @@ editor metadata, Python environments and caches, and `node_modules`. Generic
 
 1. Install [Zed](https://zed.dev/download).
 2. Clone or copy this repository to `~/.config/zed/`.
-3. Install the Tiniri and Catppuccin icon themes and the Input Mono font.
-4. Restart Zed.
+3. Install the Tiniri and Catppuccin icon themes, the Biome extension, and the
+   Input Mono font.
+4. For projects using Biome, install Biome v2 locally and add a Biome
+   configuration file.
+5. Restart Zed.
 
 Optional task dependencies include `claude`, `codex`, `uvx`, and `just`.
-The custom GPT-5 model also requires the configured LiteLLM proxy.
+The dormant custom GPT-5 model requires the configured LiteLLM proxy if
+built-in AI is re-enabled.
 
 ## License
 
