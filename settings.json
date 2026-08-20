@@ -486,6 +486,8 @@
     "line_height": "standard",
     // Dock terminal on the left
     "dock": "left",
+    // Open the terminal panel in new workspaces
+    "starts_open": true,
     // Copy text when selecting (Unix-style)
     "copy_on_select": true,
     "toolbar": {
