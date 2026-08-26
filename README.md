@@ -43,10 +43,10 @@ Project-specific Python rules belong in `pyproject.toml`, `ruff.toml`, or
 
 ### File scanning
 
-The exclusion list preserves Zed's built-in VCS and OS exclusions and adds
-editor metadata, Python environments and caches, and `node_modules`. Generic
-`build`, `dist`, and `.cache` directories are left to each project's
-`.gitignore` so tracked source directories are not hidden globally.
+The exclusion list extends Zed's current built-in exclusions with editor
+metadata, Python environments and caches, and `node_modules`. Generic `build`,
+`dist`, and `.cache` directories are left to each project's `.gitignore` so
+tracked source directories are not hidden globally.
 
 ### Tasks
 

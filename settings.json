@@ -368,22 +368,10 @@
   // --- File Scanning Exclusions ---
   // Patterns for files/folders to ignore in file tree and search
   "file_scan_exclusions": [
-    // Version control directories
-    "**/.git",
-    "**/.svn",
-    "**/.hg",
-    "**/.jj",
-    "**/.sl",
-    "**/.repo",
-    "**/CVS",
-
-    // OS-specific files
-    "**/.DS_Store",
-    "**/Thumbs.db",
+    // Preserve Zed's defaults and extend them below
+    "...",
 
     // IDE/Editor directories
-    "**/.classpath",
-    "**/.settings",
     "**/.idea",
     "**/.vscode",
 
@@ -635,14 +623,14 @@
 
     // --- Markdown ---
     "Markdown": {
-      "soft_wrap": "preferred_line_length",
+      "soft_wrap": "bounded",
       "preferred_line_length": 100,
       "remove_trailing_whitespace_on_save": false,
     },
 
     // --- LaTeX ---
     "LaTeX": {
-      "soft_wrap": "preferred_line_length",
+      "soft_wrap": "bounded",
       "preferred_line_length": 110,
     },
 
