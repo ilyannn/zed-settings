@@ -12,6 +12,7 @@ TypeScript development with Vim navigation and a compact interface.
 - CLI paths and UI projects open in new windows
 - Format-on-save limited to Git-modified lines
 - Preview tabs, smart-case search, inline diagnostics, and LSP result pickers
+- Markdown files open in the rendered preview; cursor movement is animated
 - Input Mono at 14 px with comfortable line height
 - Tiniri themes and Catppuccin file icons
 
