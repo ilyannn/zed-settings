@@ -6,6 +6,9 @@
 // To see all of Zed's default settings without changing your
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
+//
+// Last reviewed against Zed 1.20.1 on 2026-09-16 23:54 CEST
+// by Claude Code (Fable 5.1). Bump this line when re-checking new settings.
 {
   // =============================================
   // APPEARANCE & THEME
