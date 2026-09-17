@@ -7,7 +7,7 @@ TypeScript development with Vim navigation and a compact interface.
 
 ### Editor
 
-- Cursor base keymap with Vim mode, relative line numbers, and system clipboard
+- Cursor base keymap with Vim mode and system clipboard
 - Auto-save when changing windows
 - CLI paths and UI projects open in new windows
 - Format-on-save limited to Git-modified lines
