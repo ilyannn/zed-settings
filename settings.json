@@ -26,6 +26,12 @@
   "theme_overrides": {
     "Tiniri Dark": {
       "editor.active_line_number": "#059669",
+      // Rainbow bracket colors, one per nesting level (10 for deep Lisp forms):
+      // ochre, green, plum, indigo, teal, magenta, olive, sky, violet, gray
+      "accents": [
+        "#E0A84E", "#5CC98A", "#D38BD0", "#8C9CF0", "#4FC6C6",
+        "#E57BD4", "#B9C95A", "#6CC4F0", "#B394F0", "#A5ACB8",
+      ],
       "players": [
         {
           "cursor": "#059669",
@@ -35,6 +41,12 @@
     },
     "Tiniri Light": {
       "editor.active_line_number": "#059669",
+      // Rainbow bracket colors, one per nesting level (10 for deep Lisp forms):
+      // ochre, green, plum, indigo, teal, magenta, olive, sky, violet, gray
+      "accents": [
+        "#B7791F", "#2F855A", "#9B4F96", "#5A5FC4", "#0F8A8A",
+        "#B8359E", "#7A8B1A", "#1E8CC8", "#7B4FC9", "#6B7280",
+      ],
       "players": [
         {
           "cursor": "#059669",
