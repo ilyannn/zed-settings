@@ -241,9 +241,10 @@
     "use_system_clipboard": "always",
   },
 
+  // Show the key-binding menu after a short pause on a pending prefix like space
   "which_key": {
     "enabled": true,
-    "delay_ms": 200,
+    "delay_ms": 500,
   },
 
   // =============================================

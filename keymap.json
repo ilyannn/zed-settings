@@ -18,6 +18,9 @@
   {
     "context": "Editor && vim_mode == normal && !menu",
     "bindings": {
+      // Unbind plain space (vim move right, same as l) so the leader menu
+      // waits for the next key instead of timing out after 1s
+      "space": null,
       "space t": ["task::Spawn", { "task_name": "bb: Tasks" }],
       "space .": "task::Rerun",
       "space space": "task::Spawn",
