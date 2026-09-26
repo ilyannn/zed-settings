@@ -20,7 +20,8 @@
     "bindings": {
       "space t": ["task::Spawn", { "task_name": "bb: Tasks" }],
       "space .": "task::Rerun",
-      "space space": "task::Spawn"
+      "space space": "task::Spawn",
+      "space e": "project_panel::ToggleFocus"
     }
   },
   {
@@ -34,6 +35,12 @@
     "bindings": {
       "space m": "markdown::OpenPreview",
       "space r": ["task::Spawn", { "task_name": "Claude: Run File as Skill" }]
+    }
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "escape": "project_panel::ToggleFocus"
     }
   }
 ]
