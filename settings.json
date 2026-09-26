@@ -130,6 +130,9 @@
     "border_size": 2,
   },
 
+  // Rainbow brackets: color matching pairs by nesting depth
+  "colorize_brackets": true,
+
   // Color indent guides based on indentation level
   "indent_guides": {
     "coloring": "indent_aware",
