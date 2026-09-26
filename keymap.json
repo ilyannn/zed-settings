@@ -11,7 +11,8 @@
   {
     "context": "MarkdownPreview",
     "bindings": {
-      "escape": "markdown::CloseAndReturnToEditor"
+      "escape": "markdown::CloseAndReturnToEditor",
+      "space m": "markdown::CloseAndReturnToEditor"
     }
   },
   {
@@ -26,6 +27,12 @@
     "context": "Editor && vim_mode == normal && !menu && extension == bb",
     "bindings": {
       "space r": ["task::Spawn", { "task_name": "bb: Run Current File" }]
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal && !menu && extension == md",
+    "bindings": {
+      "space m": "markdown::OpenPreview"
     }
   }
 ]
