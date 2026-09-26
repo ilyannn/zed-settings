@@ -85,6 +85,17 @@
     "reveal_target": "dock"
   },
   {
+    // Claude: Treat the current Markdown file as a skill and carry out its steps
+    "label": "Claude: Run File as Skill",
+    // Quoted in the command so paths with spaces survive
+    "command": "claude \"Read $ZED_FILE and treat it as a skill: carry out the steps it describes, in order.\"",
+    "reveal": "always",
+    "use_new_terminal": true,
+    "allow_concurrent_runs": false,
+    "hide": "never",
+    "reveal_target": "dock"
+  },
+  {
     // Python: Run current file
     "label": "Python: Run Current File",
     "command": "python",

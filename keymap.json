@@ -32,7 +32,8 @@
   {
     "context": "Editor && vim_mode == normal && !menu && extension == md",
     "bindings": {
-      "space m": "markdown::OpenPreview"
+      "space m": "markdown::OpenPreview",
+      "space r": ["task::Spawn", { "task_name": "Claude: Run File as Skill" }]
     }
   }
 ]
