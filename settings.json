@@ -103,8 +103,8 @@
   // Use Cursor-style keybindings as base
   "base_keymap": "Cursor",
 
-  // Wrap long lines at editor width
-  "soft_wrap": "editor_width",
+  // Don't wrap long lines by default (toggle per editor with space w)
+  "soft_wrap": "none",
 
   // --- Search & Find ---
   // Use smart case for searches (case-insensitive unless uppercase is used)

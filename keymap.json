@@ -21,7 +21,8 @@
       "space t": ["task::Spawn", { "task_name": "bb: Tasks" }],
       "space .": "task::Rerun",
       "space space": "task::Spawn",
-      "space e": "project_panel::ToggleFocus"
+      "space e": "project_panel::ToggleFocus",
+      "space w": "editor::ToggleSoftWrap"
     }
   },
   {
