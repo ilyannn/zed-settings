@@ -27,10 +27,11 @@
     "Tiniri Dark": {
       "editor.active_line_number": "#059669",
       // Rainbow bracket colors, one per nesting level (10 for deep Lisp forms):
-      // ochre, green, plum, indigo, teal, magenta, olive, sky, violet, gray
+      // Gray first so top-level parens stay quiet next to orange fn names.
+      // gray, green, plum, indigo, teal, ochre, magenta, olive, sky, violet
       "accents": [
-        "#E0A84E", "#5CC98A", "#D38BD0", "#8C9CF0", "#4FC6C6",
-        "#E57BD4", "#B9C95A", "#6CC4F0", "#B394F0", "#A5ACB8",
+        "#A5ACB8", "#5CC98A", "#D38BD0", "#8C9CF0", "#4FC6C6",
+        "#E0A84E", "#E57BD4", "#B9C95A", "#6CC4F0", "#B394F0",
       ],
       "players": [
         {
@@ -38,14 +39,31 @@
           "selection": "#05966933",
         },
       ],
+      // Tiniri leaves strings/numbers/constants in plain fg. Keys (rose, thin)
+      // vs values: strings sage italic, numbers blue, constants/booleans teal.
+      // constant.key / variable.parameter come from extra Clojure queries in
+      // ~/Code/bab/zed (re-apply with `just zed-highlights`).
+      "syntax": {
+        "constant": { "color": "#74A1AA" },
+        "constant.key": { "color": "#D1A3A8", "font_weight": 200 },
+        "property": { "color": "#D1A3A8" },
+        "property.json_key": { "color": "#D1A3A8", "font_weight": 200 },
+        "boolean": { "color": "#74A1AA" },
+        "string": { "color": "#A3B18A", "font_style": "italic", "font_weight": 300 },
+        "number": { "color": "#86B8D4" },
+        "variable.parameter": { "color": "#B7A6D6" },
+        "comment": { "color": "#737985" },
+        "comment.doc": { "color": "#737985" },
+      },
     },
     "Tiniri Light": {
       "editor.active_line_number": "#059669",
       // Rainbow bracket colors, one per nesting level (10 for deep Lisp forms):
-      // ochre, green, plum, indigo, teal, magenta, olive, sky, violet, gray
+      // Gray first so top-level parens stay quiet next to orange fn names.
+      // gray, green, plum, indigo, teal, ochre, magenta, olive, sky, violet
       "accents": [
-        "#B7791F", "#2F855A", "#9B4F96", "#5A5FC4", "#0F8A8A",
-        "#B8359E", "#7A8B1A", "#1E8CC8", "#7B4FC9", "#6B7280",
+        "#6B7280", "#2F855A", "#9B4F96", "#5A5FC4", "#0F8A8A",
+        "#B7791F", "#B8359E", "#7A8B1A", "#1E8CC8", "#7B4FC9",
       ],
       "players": [
         {
@@ -53,6 +71,18 @@
           "selection": "#05966933",
         },
       ],
+      "syntax": {
+        "constant": { "color": "#356B94" },
+        "constant.key": { "color": "#9A4F5E", "font_weight": 200 },
+        "property": { "color": "#9A4F5E" },
+        "property.json_key": { "color": "#9A4F5E", "font_weight": 200 },
+        "boolean": { "color": "#356B94" },
+        "string": { "color": "#5F7A4B", "font_style": "italic", "font_weight": 300 },
+        "number": { "color": "#1F7A8C" },
+        "variable.parameter": { "color": "#6E5A9E" },
+        "comment": { "color": "#8A8480" },
+        "comment.doc": { "color": "#8A8480" },
+      },
     },
   },
 
@@ -219,8 +249,9 @@
   // UI font size (menus, panels, etc.)
   "ui_font_size": 15,
 
-  // Editor font family - using Input Mono for coding
-  "buffer_font_family": "Input Mono",
+  // Editor font family - Input Mono Narrow (one step narrower than Input Mono).
+  // Also tried: "Maple Mono", "Victor Mono". Terminal inherits this font.
+  "buffer_font_family": "Input Mono Narrow",
 
   // Editor font size
   "buffer_font_size": 14,
