@@ -396,6 +396,11 @@
 
     // Node.js dependencies
     "**/node_modules",
+
+    // Clojure/Babashka tool caches
+    "**/.cpcache",
+    "**/.lsp/.cache",
+    "**/.clj-kondo/.cache",
   ],
 
   // Patterns for files that should open as read-only
@@ -638,6 +643,17 @@
       "soft_wrap": "bounded",
       "preferred_line_length": 100,
       "remove_trailing_whitespace_on_save": false,
+    },
+
+    // --- Clojure (incl. Babashka .bb scripts) ---
+    "Clojure": {
+      // clojure-lsp provides code intelligence and cljfmt formatting
+      "language_servers": ["clojure-lsp"],
+      "formatter": {
+        "language_server": {
+          "name": "clojure-lsp",
+        },
+      },
     },
 
     // --- LaTeX ---

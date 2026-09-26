@@ -116,6 +116,27 @@
     "hide": "never"
   },
   {
+    // Babashka: Run current file
+    "label": "bb: Run Current File",
+    "command": "bb",
+    "args": ["$ZED_FILE"],
+    "reveal": "always",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": true,
+    "hide": "never"
+  },
+  {
+    // Babashka: List tasks from bb.edn
+    "label": "bb: Tasks",
+    "command": "bb",
+    "args": ["tasks"],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "reveal": "always",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": true,
+    "hide": "never"
+  },
+  {
     // Git: Quick commit
     "label": "Git: Quick Commit",
     "command": "git",
