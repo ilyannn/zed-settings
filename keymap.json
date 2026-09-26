@@ -13,5 +13,19 @@
     "bindings": {
       "escape": "markdown::CloseAndReturnToEditor"
     }
+  },
+  {
+    "context": "Editor && vim_mode == normal && !menu",
+    "bindings": {
+      "space t": ["task::Spawn", { "task_name": "bb: Tasks" }],
+      "space .": "task::Rerun",
+      "space space": "task::Spawn"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal && !menu && extension == bb",
+    "bindings": {
+      "space r": ["task::Spawn", { "task_name": "bb: Run Current File" }]
+    }
   }
 ]
