@@ -39,17 +39,16 @@
           "selection": "#05966933",
         },
       ],
-      // Tiniri leaves strings/numbers/constants in plain fg. Keys (rose, thin)
-      // vs values: strings sage italic, numbers blue, constants/booleans teal.
+      // Tiniri leaves strings/numbers/constants in plain fg. Keys (gold, thin)
+      // vs values: strings green italic, numbers blue, constants/booleans teal.
       // constant.key / variable.parameter come from extra Clojure queries in
       // ~/Code/bab/zed (re-apply with `just zed-highlights`).
       "syntax": {
         "constant": { "color": "#74A1AA" },
-        "constant.key": { "color": "#D1A3A8", "font_weight": 200 },
-        "property": { "color": "#D1A3A8" },
-        "property.json_key": { "color": "#D1A3A8", "font_weight": 200 },
+        "constant.key": { "color": "#B3A06A", "font_weight": 200 },
+        "property": { "color": "#B3A06A", "font_weight": 200 },
         "boolean": { "color": "#74A1AA" },
-        "string": { "color": "#A3B18A", "font_style": "italic", "font_weight": 300 },
+        "string": { "color": "#8EB686", "font_style": "italic", "font_weight": 300 },
         "number": { "color": "#86B8D4" },
         "variable.parameter": { "color": "#B7A6D6" },
         "comment": { "color": "#858B97" },
@@ -73,11 +72,10 @@
       ],
       "syntax": {
         "constant": { "color": "#356B94" },
-        "constant.key": { "color": "#9A4F5E", "font_weight": 200 },
-        "property": { "color": "#9A4F5E" },
-        "property.json_key": { "color": "#9A4F5E", "font_weight": 200 },
+        "constant.key": { "color": "#967A26", "font_weight": 200 },
+        "property": { "color": "#967A26", "font_weight": 200 },
         "boolean": { "color": "#356B94" },
-        "string": { "color": "#5F7A4B", "font_style": "italic", "font_weight": 300 },
+        "string": { "color": "#4A7C46", "font_style": "italic", "font_weight": 300 },
         "number": { "color": "#1F7A8C" },
         "variable.parameter": { "color": "#6E5A9E" },
         "comment": { "color": "#76706C" },
