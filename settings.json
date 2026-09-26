@@ -247,9 +247,10 @@
   // UI font size (menus, panels, etc.)
   "ui_font_size": 15,
 
-  // Editor font family - Input Mono Narrow (one step narrower than Input Mono).
+  // Editor font family - JetBrains Mono (true ExtraLight/Light + italics).
+  // Previous: "Input Mono Narrow".
   // Also tried: "Maple Mono", "Victor Mono". Terminal inherits this font.
-  "buffer_font_family": "Input Mono Narrow",
+  "buffer_font_family": "JetBrains Mono",
 
   // Editor font size
   "buffer_font_size": 14,
