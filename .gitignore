@@ -3,5 +3,6 @@
 !.gitignore
 !LICENSE
 !README.md
+!keymap.json
 !settings.json
 !tasks.json

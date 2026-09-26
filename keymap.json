@@ -1,0 +1,17 @@
+[
+  {
+    "context": "Terminal",
+    "bindings": {
+      "shift-enter": [
+        "terminal::SendText",
+        "\u001b\r"
+      ]
+    }
+  },
+  {
+    "context": "MarkdownPreview",
+    "bindings": {
+      "escape": "markdown::CloseAndReturnToEditor"
+    }
+  }
+]

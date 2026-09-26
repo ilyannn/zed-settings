@@ -109,7 +109,8 @@
     "enable_preview_from_file_finder": true,
   },
 
-  // Open clean Markdown files as rendered preview (escape returns to source)
+  // Open clean Markdown files as rendered preview
+  // (escape or cmd-shift-v returns to source; escape is bound in keymap.json)
   "markdown_preview": {
     "open_markdown_files_in_preview": true,
   },
