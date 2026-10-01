@@ -255,8 +255,8 @@
   // Editor font size
   "buffer_font_size": 14,
 
-  // Line height spacing - standard (denser than comfortable)
-  "buffer_line_height": "standard",
+  // Line height spacing - custom 1.35 (between standard 1.3 and comfortable 1.618)
+  "buffer_line_height": { "custom": 1.35 },
 
   // =============================================
   // VIM MODE CONFIGURATION
@@ -536,8 +536,8 @@
   // --- Terminal ---
   // Integrated terminal configuration
   "terminal": {
-    // Standard line height for terminal text
-    "line_height": "standard",
+    // Custom line height for terminal text (matches editor)
+    "line_height": { "custom": 1.35 },
     // Dock terminal on the left
     "dock": "left",
     // Open the terminal panel in new workspaces
