@@ -247,16 +247,16 @@
   // UI font size (menus, panels, etc.)
   "ui_font_size": 15,
 
-  // Editor font family - JetBrains Mono (true ExtraLight/Light + italics).
-  // Previous: "Input Mono Narrow".
-  // Also tried: "Maple Mono", "Victor Mono". Terminal inherits this font.
-  "buffer_font_family": "JetBrains Mono",
+  // Editor font family - Maple Mono.
+  // Previous: "JetBrains Mono", "Input Mono Narrow".
+  // Also tried: "Victor Mono". Terminal inherits this font.
+  "buffer_font_family": "Maple Mono",
 
   // Editor font size
   "buffer_font_size": 14,
 
-  // Line height spacing - comfortable for readability
-  "buffer_line_height": "comfortable",
+  // Line height spacing - standard (denser than comfortable)
+  "buffer_line_height": "standard",
 
   // =============================================
   // VIM MODE CONFIGURATION
