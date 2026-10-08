@@ -7,7 +7,7 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 //
-// Last reviewed against Zed 1.22.0 on 2026-10-01
+// Last reviewed against Zed 1.23.2 on 2026-10-08
 // by Claude Code (Opus 5.5). Bump this line when re-checking new settings.
 {
   // =============================================
@@ -133,6 +133,8 @@
 
   // Don't wrap long lines by default (toggle per editor with space w)
   "soft_wrap": "none",
+  // Indent wrapped continuation lines one extra level so they read as wrapped
+  "soft_wrap_indent": "extra_one",
 
   // --- Search & Find ---
   // Use smart case for searches (case-insensitive unless uppercase is used)
@@ -694,6 +696,7 @@
     // --- Markdown ---
     "Markdown": {
       "soft_wrap": "bounded",
+      "soft_wrap_indent": "same",
       "preferred_line_length": 100,
       "remove_trailing_whitespace_on_save": false,
     },
@@ -712,6 +715,7 @@
     // --- LaTeX ---
     "LaTeX": {
       "soft_wrap": "bounded",
+      "soft_wrap_indent": "same",
       "preferred_line_length": 110,
     },
 
