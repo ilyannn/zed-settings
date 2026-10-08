@@ -342,6 +342,10 @@
   },
 
   // --- Code Intelligence ---
+  // Render LSP document colors as a background fill (default: inlay swatch).
+  // Used to test a coverage LSP that reports ranges via textDocument/documentColor.
+  "lsp_document_colors": "background",
+
   // Inline hints for types, parameters, etc.
   "inlay_hints": {
     "enabled": true,
