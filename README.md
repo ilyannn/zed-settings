@@ -13,7 +13,7 @@ TypeScript development with Vim navigation and a compact interface.
 - Format-on-save limited to Git-modified lines
 - Preview tabs, smart-case search, inline diagnostics, and LSP result pickers
 - Markdown files open in the rendered preview; cursor movement is animated
-- Input Mono at 14 px with comfortable line height
+- Maple Mono at 14 px with 1.35 line height in the editor and terminal
 - Tiniri themes and Catppuccin file icons
 
 ### Language tooling
@@ -69,7 +69,7 @@ tracked source directories are not hidden globally.
 1. Install [Zed](https://zed.dev/download).
 2. Clone or copy this repository to `~/.config/zed/`.
 3. Install the Tiniri and Catppuccin icon themes, the Biome extension, and the
-   Input Mono font.
+   Maple Mono font.
 4. For projects using Biome, install Biome v2 locally and add a Biome
    configuration file.
 5. Restart Zed.
