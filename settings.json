@@ -561,6 +561,10 @@
         "activate_script": "default",
       },
     },
+    // Make CLIs (Claude Code etc.) emit OSC 8 clickable hyperlinks
+    "env": {
+      "FORCE_HYPERLINK": "1",
+    },
   },
 
   // --- Project Panel ---
