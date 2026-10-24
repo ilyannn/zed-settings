@@ -14,7 +14,7 @@ TypeScript development with Vim navigation and a compact interface.
 - Preview tabs, smart-case search, inline diagnostics, and LSP result pickers
 - Markdown files open in the rendered preview; cursor movement is animated
 - Maple Mono at 14 px with 1.35 line height in the editor and terminal
-- Tiniri themes and Catppuccin file icons
+- Tiniri themes and Catppuccin file icons, rendered in Display P3
 
 ### Language tooling
 
@@ -33,6 +33,7 @@ Project-specific Python rules belong in `pyproject.toml`, `ruff.toml`, or
 
 - Inline blame with commit summaries
 - Git and project panels on the right; terminal and outline on the left
+- Project panel groups files by extension
 - Lockfiles and generated TeX files open read-only
 - Collaboration, search, outline, and debugger panel buttons are hidden
 

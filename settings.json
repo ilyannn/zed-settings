@@ -7,7 +7,7 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 //
-// Last reviewed against Zed 1.24.2 on 2026-10-14
+// Last reviewed against Zed 1.25.3 (and 1.26.2-pre) on 2026-10-24
 // by Claude Code (Opus 5.5). Bump this line when re-checking new settings.
 {
   // =============================================
@@ -90,6 +90,9 @@
     "dark": "Catppuccin Macchiato",
     "light": "Catppuccin Latte",
   },
+
+  // Render windows in the Display P3 color space (macOS, Zed 1.26+)
+  "use_display_p3": true,
 
   // =============================================
   // PRIVACY & TELEMETRY
@@ -578,6 +581,8 @@
     "entry_spacing": "standard",
     // Show error/warning count badges on files
     "diagnostic_badges": true,
+    // Group files by extension (Zed 1.26+)
+    "sort_order": "extension",
   },
 
   // --- Hidden/Disabled Panels ---
