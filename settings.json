@@ -7,7 +7,7 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 //
-// Last reviewed against Zed 1.25.3 (and 1.26.2-pre) on 2026-10-24
+// Last reviewed against Zed 1.26.2 (and 1.27.0-pre) on 2026-10-30
 // by Claude Code (Opus 5.5). Bump this line when re-checking new settings.
 {
   // =============================================
@@ -91,7 +91,7 @@
     "light": "Catppuccin Latte",
   },
 
-  // Render windows in the Display P3 color space (macOS, Zed 1.26+)
+  // Render windows in the Display P3 color space (macOS)
   "use_display_p3": true,
 
   // =============================================
@@ -120,6 +120,9 @@
   // Open paths and projects in new windows
   "cli_default_open_behavior": "new_window",
   "default_open_behavior": "new_window",
+
+  // Open the root README in a preview tab when a project has no open items (Zed 1.27+)
+  "on_new_window": "readme",
 
   // Automatically save files when switching windows
   "autosave": "on_window_change",
@@ -581,7 +584,7 @@
     "entry_spacing": "standard",
     // Show error/warning count badges on files
     "diagnostic_badges": true,
-    // Group files by extension (Zed 1.26+)
+    // Group files by extension
     "sort_order": "extension",
   },
 

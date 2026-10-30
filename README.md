@@ -10,6 +10,7 @@ TypeScript development with Vim navigation and a compact interface.
 - Cursor base keymap with Vim mode and system clipboard
 - Auto-save when changing windows
 - CLI paths and UI projects open in new windows
+- Projects with no open tabs open their README
 - Format-on-save limited to Git-modified lines
 - Preview tabs, smart-case search, inline diagnostics, and LSP result pickers
 - Markdown files open in the rendered preview; cursor movement is animated
