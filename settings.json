@@ -323,29 +323,19 @@
   // AI features, predictions, and code intelligence
 
   // Disable all built-in AI features
-  "disable_ai": true,
+  "disable_ai": false,
 
   // --- Edit Predictions ---
   // Disabled
   "show_edit_predictions": false,
 
   // --- Custom Language Models ---
-  // Configure additional AI models via OpenAI-compatible APIs
   "language_models": {
-    "openai_compatible": {
-      // GPT-5 access through local LiteLLM proxy
-      "Azure GPT-5 through LiteLLM Proxy": {
-        "api_url": "http://127.0.0.1:4000/v1",
-        "available_models": [
-          {
-            "name": "gpt-5",
-            "display_name": "GPT-5",
-            // Token limits for the model
-            "max_tokens": 272000,
-            "max_output_tokens": 128000,
-          },
-        ],
-      },
+    // Claude through Amazon Bedrock with the standard AWS credential chain:
+    // export AWS_PROFILE in the login shell (Zed loads it at startup).
+    // Region defaults to us-east-1; override with ZED_AWS_REGION.
+    "bedrock": {
+      "authentication_method": "default",
     },
   },
 
@@ -535,8 +525,15 @@
   // --- AI Agent Panel ---
   // Claude/AI assistant panel settings
   "agent": {
-    // Dock on the left side
-    "dock": "left",
+    // Default to Opus 5.5 through Bedrock
+    "default_model": {
+      "provider": "amazon-bedrock",
+      "model": "claude-opus-5-5",
+      "enable_thinking": true,
+      "effort": "medium",
+    },
+    // Dock on the right side
+    "dock": "right",
     // Disable feedback prompts
     "enable_feedback": false,
     // Don't expand edit cards by default
