@@ -552,8 +552,9 @@
     "line_height": { "custom": 1.35 },
     // Dock terminal on the left
     "dock": "left",
-    // Open the terminal panel in new workspaces
-    "starts_open": true,
+    // Keep new workspaces bare, so files opened via VISUAL='zed --wait' get no panels;
+    // projects opened before restore their own saved layout
+    "starts_open": false,
     // Copy text when selecting (Unix-style)
     "copy_on_select": true,
     "toolbar": {
