@@ -121,8 +121,8 @@
   "cli_default_open_behavior": "new_window",
   "default_open_behavior": "new_window",
 
-  // Open the root README in a preview tab when a project has no open items (Zed 1.27+)
-  "on_new_window": "readme",
+  // Open the root README in a preview tab when a project has no open items
+  // "on_new_window": "readme", // (Zed 1.27+)
 
   // Automatically save files when switching windows
   "autosave": "on_window_change",
