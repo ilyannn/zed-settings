@@ -616,6 +616,12 @@
   // =============================================
   // Per-language configurations and formatters
 
+  // Subtitles: no WebVTT/SRT extension exists, so borrow the log extension's
+  // grammar, which highlights the cue timestamps
+  "file_types": {
+    "LOG": ["vtt", "srt"],
+  },
+
   "languages": {
     // --- Python ---
     "Python": {
