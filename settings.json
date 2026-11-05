@@ -7,8 +7,8 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 //
-// Last reviewed against Zed 1.26.2 (and 1.27.0-pre) on 2026-10-30
-// by Claude Code (Opus 5.5). Bump this line when re-checking new settings.
+// Last reviewed against Zed 1.27.0 (and 1.28.0-pre) on 2026-11-05
+// by Claude Code (Fable 5.1). Bump this line when re-checking new settings.
 {
   // =============================================
   // APPEARANCE & THEME
@@ -122,7 +122,7 @@
   "default_open_behavior": "new_window",
 
   // Open the root README in a preview tab when a project has no open items
-  // "on_new_window": "readme", // (Zed 1.27+)
+  "on_new_window": "readme",
 
   // Automatically save files when switching windows
   "autosave": "on_window_change",
