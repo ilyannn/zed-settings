@@ -53,6 +53,26 @@
         "variable.parameter": { "color": "#B7A6D6" },
         "comment": { "color": "#858B97" },
         "comment.doc": { "color": "#858B97" },
+        // WebVTT cue numbers: quiet gray, bold so they still mark each cue
+        "label.cue_id": { "color": "#858B97", "font_weight": 700 },
+        // WebVTT speakers (zed-webvtt): accent colours minus gray, brick red for magenta
+        // green, plum, sky, ochre, indigo, brick red, teal, olive; names in italic
+        "function.speaker.0": { "color": "#5CC98A" },
+        "function.speaker.0.name": { "color": "#5CC98A", "font_style": "italic" },
+        "keyword.speaker.1": { "color": "#D38BD0" },
+        "keyword.speaker.1.name": { "color": "#D38BD0", "font_style": "italic" },
+        "type.speaker.2": { "color": "#6CC4F0" },
+        "type.speaker.2.name": { "color": "#6CC4F0", "font_style": "italic" },
+        "string.speaker.3": { "color": "#E0A84E" },
+        "string.speaker.3.name": { "color": "#E0A84E", "font_style": "italic" },
+        "constant.speaker.4": { "color": "#8C9CF0" },
+        "constant.speaker.4.name": { "color": "#8C9CF0", "font_style": "italic" },
+        "number.speaker.5": { "color": "#F0806E" },
+        "number.speaker.5.name": { "color": "#F0806E", "font_style": "italic" },
+        "property.speaker.6": { "color": "#4FC6C6" },
+        "property.speaker.6.name": { "color": "#4FC6C6", "font_style": "italic" },
+        "attribute.speaker.7": { "color": "#B9C95A" },
+        "attribute.speaker.7.name": { "color": "#B9C95A", "font_style": "italic" },
       },
     },
     "Tiniri Light": {
@@ -80,6 +100,26 @@
         "variable.parameter": { "color": "#6E5A9E" },
         "comment": { "color": "#76706C" },
         "comment.doc": { "color": "#76706C" },
+        // WebVTT cue numbers: quiet gray, bold so they still mark each cue
+        "label.cue_id": { "color": "#76706C", "font_weight": 700 },
+        // WebVTT speakers (zed-webvtt): accent colours minus gray, brick red for magenta
+        // green, plum, sky, ochre, indigo, brick red, teal, olive; names in italic
+        "function.speaker.0": { "color": "#2F855A" },
+        "function.speaker.0.name": { "color": "#2F855A", "font_style": "italic" },
+        "keyword.speaker.1": { "color": "#9B4F96" },
+        "keyword.speaker.1.name": { "color": "#9B4F96", "font_style": "italic" },
+        "type.speaker.2": { "color": "#1E8CC8" },
+        "type.speaker.2.name": { "color": "#1E8CC8", "font_style": "italic" },
+        "string.speaker.3": { "color": "#B7791F" },
+        "string.speaker.3.name": { "color": "#B7791F", "font_style": "italic" },
+        "constant.speaker.4": { "color": "#5A5FC4" },
+        "constant.speaker.4.name": { "color": "#5A5FC4", "font_style": "italic" },
+        "number.speaker.5": { "color": "#C0453A" },
+        "number.speaker.5.name": { "color": "#C0453A", "font_style": "italic" },
+        "property.speaker.6": { "color": "#0F8A8A" },
+        "property.speaker.6.name": { "color": "#0F8A8A", "font_style": "italic" },
+        "attribute.speaker.7": { "color": "#7A8B1A" },
+        "attribute.speaker.7.name": { "color": "#7A8B1A", "font_style": "italic" },
       },
     },
   },
@@ -615,12 +655,6 @@
   // LANGUAGE-SPECIFIC SETTINGS
   // =============================================
   // Per-language configurations and formatters
-
-  // Subtitles: no WebVTT/SRT extension exists, so borrow the log extension's
-  // grammar, which highlights the cue timestamps
-  "file_types": {
-    "LOG": ["vtt", "srt"],
-  },
 
   "languages": {
     // --- Python ---
