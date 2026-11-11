@@ -7,8 +7,8 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 //
-// Last reviewed against Zed 1.27.0 (and 1.28.0-pre) on 2026-11-05
-// by Claude Code (Fable 5.1). Bump this line when re-checking new settings.
+// Last reviewed against Zed 1.28.1 (and 1.29.1-pre) on 2026-11-12
+// by Claude Code (Opus 5.5). Bump this line when re-checking new settings.
 {
   // =============================================
   // APPEARANCE & THEME
@@ -366,8 +366,11 @@
   "disable_ai": false,
 
   // --- Edit Predictions ---
-  // Disabled
+  // Disabled, with the status bar button hidden
   "show_edit_predictions": false,
+  "edit_predictions": {
+    "button": false,
+  },
 
   // --- Custom Language Models ---
   "language_models": {

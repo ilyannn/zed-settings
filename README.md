@@ -42,8 +42,9 @@ Project-specific Python rules belong in `pyproject.toml`, `ruff.toml`, or
 
 - Usage metrics and diagnostic telemetry are disabled
 - New worktrees require explicit trust before project settings can launch tools
-- Edit predictions are disabled; the Agent Panel defaults to Claude Opus 5.5
-  through Amazon Bedrock with the standard AWS credential chain
+- Edit predictions are disabled and their status bar button hidden; the Agent
+  Panel defaults to Claude Opus 5.5 through Amazon Bedrock with the standard
+  AWS credential chain
 
 ### File scanning
 
