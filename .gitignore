@@ -1,6 +1,8 @@
 # Only track files manually added to the index
 *
 !.gitignore
+!.zed/
+!.zed/settings.json
 !LICENSE
 !README.md
 !keymap.json

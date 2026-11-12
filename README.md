@@ -68,6 +68,11 @@ tracked source directories are not hidden globally.
 
 - `settings.json` — Zed preferences and language configuration
 - `tasks.json` — reusable project tasks
+- `.zed/settings.json` — project settings for this repository: tints its window
+  with the key colour, the green `#059669` that `settings.json` uses as the
+  accent. The setting (`window_theme_overrides`) exists only in Zett, a
+  personal fork of Zed; stable Zed shows a settings warning for the file and
+  ignores it
 
 ## Installation
 

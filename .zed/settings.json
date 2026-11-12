@@ -1,0 +1,25 @@
+// Project settings for this repo (the Zed configuration itself).
+//
+// `window_theme_overrides` is a Zett-only setting (Zett is a personal fork of
+// Zed): like `theme_overrides`, but it recolours only the window whose first
+// folder is this project. Stable Zed doesn't know the key and shows a settings
+// warning for this file; nothing else changes there.
+//
+// The tint is Zed's key colour, the green #059669 used as the accent in
+// ../settings.json (active line number, cursor), in darker and lighter shades.
+{
+  "window_theme_overrides": {
+    "Tiniri Dark": {
+      "title_bar.background": "#064e3b",
+      "title_bar.inactive_background": "#053b2d",
+      "status_bar.background": "#064e3b",
+      "tab_bar.background": "#053b2d",
+    },
+    "Tiniri Light": {
+      "title_bar.background": "#d1fae5",
+      "title_bar.inactive_background": "#ecfdf5",
+      "status_bar.background": "#d1fae5",
+      "tab_bar.background": "#ecfdf5",
+    },
+  },
+}
