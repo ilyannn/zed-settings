@@ -34,7 +34,7 @@ Project-specific Python rules belong in `pyproject.toml`, `ruff.toml`, or
 
 - Inline blame with commit summaries
 - Remotes fetched automatically every 6 hours
-- Git, project, and agent panels on the right; terminal and outline on the left
+- Git and project panels on the right; terminal and outline on the left
 - Project panel groups files by extension
 - Lockfiles and generated TeX files open read-only
 - Collaboration, search, outline, and debugger panel buttons are hidden
@@ -43,9 +43,9 @@ Project-specific Python rules belong in `pyproject.toml`, `ruff.toml`, or
 
 - Usage metrics and diagnostic telemetry are disabled
 - New worktrees require explicit trust before project settings can launch tools
-- Edit predictions are disabled and their status bar button hidden; the Agent
-  Panel defaults to Claude Opus 5.5 through Amazon Bedrock with the standard
-  AWS credential chain
+- Zed's built-in AI is off (`disable_ai`): no Agent Panel, inline assist, or
+  edit predictions. The Claude and Codex tasks run their CLIs in a terminal
+  and don't depend on it
 
 ### File scanning
 
@@ -80,8 +80,6 @@ tracked source directories are not hidden globally.
 5. Restart Zed.
 
 Optional task dependencies include `claude`, `codex`, `uvx`, and `just`.
-The Agent Panel needs AWS credentials: export `AWS_PROFILE` in your login
-shell so Zed picks it up at startup.
 
 ## License
 
