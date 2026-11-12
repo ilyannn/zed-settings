@@ -331,6 +331,13 @@
   // Git integration and display settings
 
   "git": {
+    // Fetch the upstream and default-branch remotes every 6 hours so
+    // ahead/behind counts don't go stale (all ~/Code remotes use the no-touch GitHub key)
+    "auto_fetch": {
+      "enabled": true,
+      "interval_secs": 21600,
+    },
+
     // Show more information in the branch picker
     "branch_picker": {
       "show_author_name": true,

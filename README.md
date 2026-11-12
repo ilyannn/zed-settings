@@ -33,6 +33,7 @@ Project-specific Python rules belong in `pyproject.toml`, `ruff.toml`, or
 ### Git and interface
 
 - Inline blame with commit summaries
+- Remotes fetched automatically every 6 hours
 - Git, project, and agent panels on the right; terminal and outline on the left
 - Project panel groups files by extension
 - Lockfiles and generated TeX files open read-only
