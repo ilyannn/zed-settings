@@ -448,6 +448,17 @@
   },
 
   // =============================================
+  // EXTENSIONS
+  // =============================================
+  // Which extensions update on their own
+
+  // Keep the Lean 4 extension at the version that was security-reviewed;
+  // update it by hand after a new version has been reviewed
+  "auto_update_extensions": {
+    "lean4": false,
+  },
+
+  // =============================================
   // FILE & PROJECT MANAGEMENT
   // =============================================
   // File handling and project organization
